@@ -64,7 +64,7 @@ input[type="search"] {
 .entry-content:after,
 .footer-widgets:after,
 .nav-primary:after,
-.nav-secondary:after,
+.nav-secondary:after,`
 .pagination:after,
 .site-container:after,
 .site-footer:after,
@@ -77,6 +77,10 @@ input[type="search"] {
 	content: " ";
 	display: table;
 }
+
+/* SASS * ========================================================================== */
+
+
 
 /* Utility
  * ========================================================================== */
