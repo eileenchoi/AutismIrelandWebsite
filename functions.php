@@ -20,7 +20,18 @@ define( 'CHILD_THEME_NAME', 'Maker Pro' );
 define( 'CHILD_THEME_URL', 'http://my.studiopress.com/themes/maker/' );
 define( 'CHILD_THEME_VERSION', '1.0.1' );
 
+	
 //* Enqueue scripts and styles
+
+
+//*Enqueue FontAwesome 
+function enqueue_our_required_stylesheets(){
+	wp_enqueue_style('font-awesome', '//use.fontawesome.com/releases/v5.3.1/css/all.css'); 
+}
+
+add_action('wp_enqueue_scripts','enqueue_our_required_stylesheets');
+
+
 add_action( 'wp_enqueue_scripts', 'maker_scripts_styles' );
 function maker_scripts_styles() {
 

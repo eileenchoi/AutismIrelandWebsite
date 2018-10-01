@@ -64,7 +64,7 @@ input[type="search"] {
 .entry-content:after,
 .footer-widgets:after,
 .nav-primary:after,
-.nav-secondary:after,`
+.nav-secondary:after,
 .pagination:after,
 .site-container:after,
 .site-footer:after,
@@ -159,7 +159,7 @@ h5,
 
 h1,
 .front-page-1 .widgettitle {
-	font-size: 40px;
+	font-size: 60px;
 }
 
 h2 {
@@ -284,10 +284,10 @@ hr,
 	    font-size: 25px;
 	}
 
-	h1,
+	/* h1,
 	.front-page-1 .widgettitle {
-		font-size: 90px;
-	}
+		font-size: $h1;
+	} */
 
 	h2 {
 		font-size: 40px;
@@ -1110,6 +1110,11 @@ a[rel~="attachment"]:hover,
 
 /* Search Form
  * ========================================================================== */
+#search-3{
+	/* border:2px solid; */
+	text-align: center;
+}
+
 
 .search-form {
 	position: relative;
@@ -1645,7 +1650,7 @@ a[rel~="attachment"]:hover,
 .entry-content ol,
 .entry p,
 .entry-content p,
-.textwidget p,
+
 .author-box p,
 .entry-content ul,
 .entry ul,
