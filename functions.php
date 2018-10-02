@@ -188,21 +188,23 @@ genesis_register_sidebar( array(
 	'name'        => __( 'Front Page 1: Thin Width', 'maker' ),
 	'description' => __( 'This is the 1st section on the front page. It has a thinner width.', 'maker' )
 ) );
-genesis_register_sidebar( array(
-	'id'          => 'front-page-2',
-	'name'        => __( 'Front Page 2: Full Width', 'maker' ),
-	'description' => __( 'This is the 2nd section on the front page. It is full width but will respond to the number of widgets inside.', 'maker' )
-) );
+
 genesis_register_sidebar( array(
 	'id'          => 'front-page-3',
 	'name'        => __( 'Front Page 3: Thin Width', 'maker' ),
 	'description' => __( 'This is the 3rd section on the front page. It has a thinner width.', 'maker' )
 ) );
 genesis_register_sidebar( array(
+	'id'          => 'front-page-2',
+	'name'        => __( 'Front Page 2: Full Width', 'maker' ),
+	'description' => __( 'This is the 2nd section on the front page. It is full width but will respond to the number of widgets inside.', 'maker' )
+) );
+genesis_register_sidebar( array(
 	'id'          => 'front-page-4',
 	'name'        => __( 'Front Page 4', 'maker' ),
 	'description' => __( 'This is the 4th section on the front page. It has the default width.', 'maker' )
 ) );
+
 genesis_register_sidebar( array(
 	'id'          => 'front-page-5',
 	'name'        => __( 'Front Page 5: Full Width', 'maker' ),

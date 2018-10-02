@@ -68,26 +68,23 @@
 /* Front Page 2
  * ========================================================================== */
 
- #text-3 .textwidget p{
-	 text-align: center;
-
- }
-
- #text-3 h3.widgettitle.widget-title{
-	 font-size: 35px;
-	 font-size: 2rem;
-	 text-align: center;
- }
 
 .front-page-2 {
 	overflow: hidden;
 	display: inline-block;
 	width: 100%;
+	
 }
 
 .front-page-2 .widget-area {
-	margin-bottom: 60px;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
 }
+
 
 
 .front-page-2 .featured-content article.entry {
@@ -135,14 +132,6 @@
   display: block;
 }
 
-.front-page-2 .widget-area {
-	display: -webkit-flex;
-	display: -ms-flexbox;
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	align-items: center;
-}
 
 .front-contact{
 	border: 2px solid pink;
@@ -168,6 +157,17 @@
 }
 /* Front Page 3
  * ========================================================================== */
+
+ #text-3 .textwidget p{
+	 text-align: center;
+
+ }
+
+ #text-3 h3.widgettitle.widget-title{
+	 font-size: 35px;
+	 font-size: 2rem;
+	 text-align: center;
+ }
 
 .front-page-3 .widget-area {
  	margin-bottom: 60px;
