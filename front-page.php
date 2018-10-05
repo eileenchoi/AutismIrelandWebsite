@@ -66,8 +66,8 @@ function maker_front_page_widgets() {
 		'after'  => '</div></div></div>',
 	) );
 
-	genesis_widget_area( 'front-page-3', array(
-		'before' => '<div class="front-page-3"><div class="wrap"><div class="three-fourths only widget-area">',
+	genesis_widget_area( 'front-page-4', array(
+		'before' => '<div class="front-page-4"><div class="wrap"><div class="widget-area">',
 		'after'  => '</div></div></div>',
 	) );
 
@@ -75,12 +75,12 @@ function maker_front_page_widgets() {
 		'before' => '<div class="front-page-2 flexible-widget-area"><div class="flexible-widgets widget-area' . maker_widget_area_class( 'front-page-2' ) . '">',
 		'after'  => '</div></div>',
 	) );
+	
+	genesis_widget_area( 'front-page-3', array(
+	'before' => '<div class="front-page-3"><div class="wrap"><div class="three-fourths only widget-area">',
+	'after'  => '</div></div></div>',
+) );
 
-
-	genesis_widget_area( 'front-page-4', array(
-		'before' => '<div class="front-page-4"><div class="wrap"><div class="widget-area">',
-		'after'  => '</div></div></div>',
-	) );
 
 	genesis_widget_area( 'front-page-5', array(
 		'before' => '<div class="front-page-5"><div class="widget-area">',

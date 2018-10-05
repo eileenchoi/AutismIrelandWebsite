@@ -35,7 +35,7 @@ add_action('wp_enqueue_scripts','enqueue_our_required_stylesheets');
 add_action( 'wp_enqueue_scripts', 'maker_scripts_styles' );
 function maker_scripts_styles() {
 
-	wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Martel:200,700,900|Roboto+Condensed:700', array(), CHILD_THEME_VERSION );
+	wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Martel:200,700,900|Source+Sans+Pro|Source+Serif+Pro|Roboto+Condensed:700', array(), CHILD_THEME_VERSION );
 	wp_enqueue_style( 'ionicons', '//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css', array(), CHILD_THEME_VERSION );
 
 	wp_enqueue_script( 'maker-fitvids', get_stylesheet_directory_uri() . '/js/jquery.fitvids.js', array(), CHILD_THEME_VERSION );
@@ -188,21 +188,22 @@ genesis_register_sidebar( array(
 	'name'        => __( 'Front Page 1: Thin Width', 'maker' ),
 	'description' => __( 'This is the 1st section on the front page. It has a thinner width.', 'maker' )
 ) );
-
 genesis_register_sidebar( array(
-	'id'          => 'front-page-3',
-	'name'        => __( 'Front Page 3: Thin Width', 'maker' ),
-	'description' => __( 'This is the 3rd section on the front page. It has a thinner width.', 'maker' )
+	'id'          => 'front-page-4',
+	'name'        => __( 'Front Page 4', 'maker' ),
+	'description' => __( 'This is the 4th section on the front page. It has the default width.', 'maker' )
 ) );
+
 genesis_register_sidebar( array(
 	'id'          => 'front-page-2',
 	'name'        => __( 'Front Page 2: Full Width', 'maker' ),
 	'description' => __( 'This is the 2nd section on the front page. It is full width but will respond to the number of widgets inside.', 'maker' )
 ) );
+
 genesis_register_sidebar( array(
-	'id'          => 'front-page-4',
-	'name'        => __( 'Front Page 4', 'maker' ),
-	'description' => __( 'This is the 4th section on the front page. It has the default width.', 'maker' )
+	'id'          => 'front-page-3',
+	'name'        => __( 'Front Page 3: Thin Width', 'maker' ),
+	'description' => __( 'This is the 3rd section on the front page. It has a thinner width.', 'maker' )
 ) );
 
 genesis_register_sidebar( array(

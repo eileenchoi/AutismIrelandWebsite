@@ -1,3 +1,29 @@
+/* BASIC STYLES
+ * ========================================================================== */
+/* 
+*** COLORS ****
+
+Main: Steelblue, #2171bb 
+
+
+*/
+
+/* Blue Scheme
+navy blue #173042
+dark turquoise #236477
+mint white #cfdfda
+lime green #7cad3e
+forest green #4a6c2f
+
+*/
+
+/* 
+*****FONTS *****
+
+
+
+*/
+
 /* Front Page Widgets
  * ========================================================================== */
 
@@ -68,7 +94,12 @@
 /* Front Page 2
  * ========================================================================== */
 
-
+.front-page-2 .search-form{
+	position: relative;
+	width: 65%;
+	margin:0 auto;
+	padding-bottom: 30px;
+}
 .front-page-2 {
 	overflow: hidden;
 	display: inline-block;
@@ -133,10 +164,10 @@
 }
 
 
-.front-contact{
+/* .front-contact{
 	border: 2px solid pink;
 	
-}
+} */
 
 .front-contact p{
 	margin: 0;
@@ -177,17 +208,29 @@
 /* Front Page 6
  * ========================================================================== */
 
-.front-page-6 .widgettitle {
-	 color: #57e5ae;
-}
+ .front-page-6 .widget{
+	 margin-left: 0;
+	 padding-left: 0;
+ }
+ .front-page-6 .widget-wrap{
+	 border: 2px solid blue;
+	 width: 100%;
+ }
+/* 
+ .front-page-6-left{
+	 border: 2px dashed orange;
+ } */
+
+
+
 
 @media only screen and (min-width: 800px) {
 
-	.front-page-6 .widget {
+	/* .front-page-6 .widget {
 	 	margin-left: 1.5625%;
 	 	padding-left: 32.291666666667%;
 		position: relative;
-	}
+	} */
 
 	.front-page-6 .widgettitle {
 		position: absolute;
@@ -235,3 +278,10 @@
 	}
 
 }
+
+/* Footer
+ * ========================================================================== */
+
+ footer{
+	 border: 2px solid blue;
+ }
