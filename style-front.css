@@ -88,7 +88,58 @@ forest green #4a6c2f
  * ========================================================================== */
 
 .front-page-1 {
-	margin: 40px auto;
+margin: 40px auto;
+background-image: url('/wp-content/uploads/2018/10/header.jpg');
+background-color: #fff;
+background-position: 50% 15%;
+background-repeat: no-repeat;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+background-size: cover;
+top: 0;
+position: relative;
+max-width: none;
+}
+
+.front-page-1 .wrap {
+padding: 50px 30px;
+}
+
+.front-page-1 .widget:last-child {
+margin-bottom: 0;
+}
+
+@media only screen and (min-width: 800px){
+.front-page-1 {
+margin-top: -165px;
+z-index: -1;
+padding-top: 150px;
+padding-bottom: 20px;
+}
+}
+
+/*overlay.------*/
+.front-page-1:after {
+content: " ";
+display: inline-block;
+position: absolute;
+top: 0;
+right: 0;R
+bottom: 0;
+left: 0;
+z-index: 0;
+background: #fff;
+opacity: 0.2;
+z-index: -1;
+}
+
+[class*="front-page-1"] {
+position: relative;
+z-index: 1;
+}
+
+.site-header {
+z-index: 99999;
 }
 
 /* Front Page 2
