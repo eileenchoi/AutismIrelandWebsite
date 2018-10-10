@@ -47,6 +47,7 @@ forest green #4a6c2f
 
 	.widget-area {
 		margin-bottom: 80px;
+		
 	}
 
 	.flexible-widgets,
@@ -87,44 +88,36 @@ forest green #4a6c2f
 /* Front Page 1
  * ========================================================================== */
 
-.front-page-1 {
-margin: 40px auto;
-background-image: url('/wp-content/uploads/2018/10/header.jpg');
-background-color: #fff;
-background-position: 50% 15%;
-background-repeat: no-repeat;
--webkit-background-size: cover;
--moz-background-size: cover;
-background-size: cover;
-top: 0;
-position: relative;
-max-width: none;
-}
 
-.front-page-1 .wrap {
-padding: 50px 30px;
-}
+ .front-page-1{
+	 margin: 0 auto;
+	 background-image:url('/wp-content/uploads/2018/10/header.jpg');
+	 background-position: 50% 15%;
+	 background-repeat: no-repeat;
+	 background-size: cover;
+	 -webkit-background-size: cover;
+	-moz-background-size: cover;
+	top:0;
+	max-width: none;
+	position: relative;
+	height: 70vh;
+	display: flex;
+	align-items: center;
+ }
 
 .front-page-1 .widget:last-child {
 margin-bottom: 0;
+} 
+.front-page-1 h3{
+	color: white;
 }
-
-@media only screen and (min-width: 800px){
-.front-page-1 {
-margin-top: -165px;
-z-index: -1;
-padding-top: 150px;
-padding-bottom: 20px;
-}
-}
-
 /*overlay.------*/
 .front-page-1:after {
 content: " ";
 display: inline-block;
 position: absolute;
 top: 0;
-right: 0;R
+right: 0;
 bottom: 0;
 left: 0;
 z-index: 0;
@@ -142,14 +135,48 @@ z-index: 1;
 z-index: 99999;
 }
 
+.front-page-1 .two-thirds{
+	/* border: 2px solid; */
+	margin: 50px 0px 20px 80px;
+	padding: 40px;		
+}
+
+.front-page-1 .wrap{
+	/* border: 2px dashed green; */
+	padding: 0;
+	margin: 0;
+	
+	
+}
+
+@media only screen and (min-width: 800px){
+/* 
+.front-page-1 {
+margin-top: -165px;
+z-index: -1;
+padding-top: 150px;
+padding-bottom: 20px;
+} */
+}
+
+/* Front Page 4 - Landing Section 2
+ * ========================================================================== */
+
+.front-page-4 .widget-area{
+	margin-top: 80px;
+}
+
+
+
 /* Front Page 2
  * ========================================================================== */
+
 
 .front-page-2 .search-form{
 	position: relative;
 	width: 65%;
 	margin:0 auto;
-	padding-bottom: 30px;
+	padding-bottom: 60px;
 }
 .front-page-2 {
 	overflow: hidden;
@@ -214,23 +241,31 @@ z-index: 99999;
   display: block;
 }
 
-
-/* .front-contact{
-	border: 2px solid pink;
-	
-} */
-
-.front-contact p{
-	margin: 0;
+.front-contact{
+	max-width: 70%;
+	text-align: center;
+	margin: 0 auto;
 	padding: 13px 0;
+	display: flex;
+	flex-direction: column;
+
 }
 
+.front-contact p{
+	padding: 0 0 20px 0;
+	margin: 0;
+}
 .front-contact .phone,
 .front-contact .email{
-	
+	font-size: 1.5rem;
 	display: flex;
-	align-items: center;
-	justify-content: center;
+	flex-direction: row;
+	padding:0;
+}
+
+.phone p, .email p{
+	padding: 0 0 10px 0;
+	margin: 4px 0;
 }
 
 .front-contact i{
@@ -240,6 +275,10 @@ z-index: 99999;
 /* Front Page 3
  * ========================================================================== */
 
+ #text-3 .textwidget{
+	 max-width: 70%;
+	 margin: 0 auto;
+ }
  #text-3 .textwidget p{
 	 text-align: center;
 
@@ -255,6 +294,11 @@ z-index: 99999;
  	margin-bottom: 60px;
 }
 
+#text-4 ul.serif-list{
+	font-size: 22px;
+	margin-right: 10px;
+	font-weight: 600;
+}
 
 /* Front Page 6
  * ========================================================================== */
@@ -267,10 +311,12 @@ z-index: 99999;
 	 border: 2px solid blue;
 	 width: 100%;
  }
-/* 
- .front-page-6-left{
-	 border: 2px dashed orange;
- } */
+
+
+ .front-page-6-left h4{
+	 font-weight: 300;
+	 font-size: 22px;
+ }
 
 
 
@@ -291,8 +337,20 @@ z-index: 99999;
 	}
 
 }
+/* Front Page 7
+ * ========================================================================== */
 
+ /* .front-page-7{
+	 border:2px solid green;
+	 
+ } */
 
+ /* .front-page-7 .wrap{
+	 border: 2px solid blue;
+ } */
+ .front-page-7 .wrap .flexible-widgets{
+	 margin: 0 auto;
+ }
 /* Front Page 8
  * ========================================================================== */
 
@@ -332,7 +390,20 @@ z-index: 99999;
 
 /* Footer
  * ========================================================================== */
+.back-to-top{
+	font-size: 20px;
+}
 
- footer{
-	 border: 2px solid blue;
+ .footer-1-text{
+	 /* border:2px solid; */
+	 margin:10px 0;
+ }
+ .footer-widgets .wrap{
+	 /* border:2px dashed purple; */
+	 max-width: none;
+	 padding: 0 3%;
+ }
+
+ .facebook{
+	 border:2px solid blue;
  }

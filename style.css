@@ -117,10 +117,11 @@ body {
 	background-color: #fff;
 	color: #2171bb;
 	font-family: "Open Sans", "Helvetica", arial;
-	font-size: 15px;
+	font-size: 18px;
 	font-weight: 400;
 	overflow-x: hidden;
 	line-height: 1.612;
+	letter-spacing: 0.5px;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -140,6 +141,7 @@ ul.serif-list {
 
 ul.serif-list li {
 	margin-bottom: 10px;
+	
 }
 
 li {
@@ -153,14 +155,14 @@ h5,
 .entry-title {
 	margin: 0 0 1.612rem;
 	line-height: 1.2;
-	font-family: "Roboto Condensed";
-	font-weight: 700;
-	text-transform: uppercase;
+	text-transform: capitalize;
+	font-family: "Martel";
 }
 
 h1,
 .front-page-1 .widgettitle {
 	font-size: 50px;
+	
 }
 
 h2 {
@@ -169,14 +171,19 @@ h2 {
 	font-weight: 200;
 	line-height: 1.612em;
 	margin: 0 0 1.612rem;
+
 }
 
 h3 {
 	font-size: 32px;
+	
+	
 }
 
 h4 {
 	font-size: 24px;
+	font-family: "Source Sans Pro";
+
 }
 
 h5 {
@@ -208,7 +215,7 @@ p.intro,
     font-size: 20px;
     line-height: 2;
     font-weight: 200;
-		font-family: "Martel";
+	font-family: "Martel";
 }
 
 strong {
@@ -303,14 +310,20 @@ hr,
  * ========================================================================== */
 
 a {
-	color: #57e5ae;
 	text-decoration: none;
-	border-bottom: 1px solid;
 	outline: 0;
+	border-bottom: 1px solid;
 }
 
 a:hover {
-	border-color: transparent;
+	border-bottom: transparent;
+	transition: 0.3s ease-in-ease-out;
+	
+}
+
+article a:hover{
+	border-bottom: none;
+
 }
 
 /* Transitions
@@ -1016,7 +1029,8 @@ a[rel~="attachment"]:hover,
 @media only screen and ( min-width: 1024px ) {
 
 	.featured-content .entry-title {
-		font-size: 24px;
+		font-size: 20px;
+		
 	}
 
 }
@@ -1139,8 +1153,10 @@ a[rel~="attachment"]:hover,
 
 .site-header {
 	width: 100%;
-	padding: 40px 0;
+	padding: 12px 0;
 	position: relative;
+	background-color: rgba(255, 255, 255, 0.7);
+
 }
 
 .title-area {
@@ -1151,7 +1167,7 @@ a[rel~="attachment"]:hover,
 .site-title {
 	font-size: 20px;
 	font-weight: 900;
-	line-height: 1.2;
+	/* line-height: 1.2; */
 	margin: 0 auto;
 	text-transform: none;
 	font-family: "Martel";
@@ -1190,9 +1206,9 @@ a[rel~="attachment"]:hover,
 
 @media only screen and (min-width: 800px) {
 
-	.site-header {
+	/* .site-header {
 		padding: 60px 0 50px;
-	}
+	} */
 
 	.title-area {
 		margin-top: 12px;
@@ -1217,7 +1233,6 @@ a[rel~="attachment"]:hover,
 	display: block;
 	margin: 0 16px 0;
 	position: relative;
-	color: #12302e;
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
 	font-weight: 400;
@@ -1402,6 +1417,8 @@ a[rel~="attachment"]:hover,
 	.nav-primary .genesis-nav-menu a {
 		margin: 0;
 		padding: 10px 0;
+		font-size: 1.1rem;
+		font-size: 17px;
 	}
 
 }
@@ -1409,7 +1426,7 @@ a[rel~="attachment"]:hover,
 @media only screen and (min-width: 800px) {
 
 	.nav-primary .genesis-nav-menu a {
-		font-size: 15px;
+		font-size: 16.5px;
 	}
 
 	.nav-primary {
@@ -2048,9 +2065,9 @@ p.comment-form-comment {
 @media only screen and (min-width: 800px) {
 
 
-	.footer-widgets .widget-area:first-child {
+	/* .footer-widgets .widget-area:first-child {
 		margin: 0 auto 100px;
-	}
+	} */
 
 	.footer-widgets .enews form {
 		margin-left: -5px;

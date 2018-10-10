@@ -26,7 +26,7 @@ define( 'CHILD_THEME_VERSION', '1.0.1' );
 
 //*Enqueue FontAwesome 
 function enqueue_our_required_stylesheets(){
-	wp_enqueue_style('font-awesome', '//use.fontawesome.com/releases/v5.3.1/css/all.css'); 
+	wp_enqueue_style('font-awesome', get_stylesheet_directory_uri('//use.fontawesome.com/releases/v5.3.1/css/all.css')); 
 }
 
 add_action('wp_enqueue_scripts','enqueue_our_required_stylesheets');
@@ -35,7 +35,7 @@ add_action('wp_enqueue_scripts','enqueue_our_required_stylesheets');
 add_action( 'wp_enqueue_scripts', 'maker_scripts_styles' );
 function maker_scripts_styles() {
 
-	wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Martel:200,700,900|Source+Sans+Pro|Source+Serif+Pro|Roboto+Condensed:700', array(), CHILD_THEME_VERSION );
+	wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Martel:200,700,900|Source+Sans+Pro|Source+Serif+Pro|Montserrat 200,700,900|s', array(), CHILD_THEME_VERSION );
 	wp_enqueue_style( 'ionicons', '//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css', array(), CHILD_THEME_VERSION );
 
 	wp_enqueue_script( 'maker-fitvids', get_stylesheet_directory_uri() . '/js/jquery.fitvids.js', array(), CHILD_THEME_VERSION );
