@@ -117,7 +117,7 @@ body {
 	background-color: #fff;
 	color: #2171bb;
 	font-family: "Open Sans", "Helvetica", arial;
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 400;
 	overflow-x: hidden;
 	line-height: 1.612;
@@ -283,9 +283,9 @@ hr,
 
 @media only screen and (min-width: 1024px) {
 
-	body {
+	/* body {
 		font-size: 18px;
-	}
+	} */
 
 	p.intro,
   .archive-description p {
@@ -1141,6 +1141,7 @@ a[rel~="attachment"]:hover,
 .search-form input[type="search"] {
 	width: 100%;
 	margin-bottom: 10px;
+	text-align: center;
 }
 
 .search-form input[type="submit"] {
@@ -1155,7 +1156,7 @@ a[rel~="attachment"]:hover,
 	width: 100%;
 	padding: 12px 0;
 	position: relative;
-	background-color: rgba(255, 255, 255, 0.7);
+	
 
 }
 
@@ -1167,7 +1168,7 @@ a[rel~="attachment"]:hover,
 .site-title {
 	font-size: 20px;
 	font-weight: 900;
-	/* line-height: 1.2; */
+	line-height: 1.2;
 	margin: 0 auto;
 	text-transform: none;
 	font-family: "Martel";
@@ -1241,11 +1242,12 @@ a[rel~="attachment"]:hover,
 .genesis-nav-menu li a:hover,
 .genesis-nav-menu .menu-item a:hover,
 .genesis-nav-menu .current-menu-item > a,
-.genesis-nav-menu .sub-menu .current-menu-item > a:hover {
+.genesis-nav-menu .sub-menu .current-menu-item > a, a {
 	text-decoration: none;
-	opacity: 1;
-	color: #57e5ae;
+	position: relative;
+	color: #5A5F37;
 }
+
 
 @media only screen and (min-width: 800px) {
 
@@ -1295,8 +1297,10 @@ a[rel~="attachment"]:hover,
 		border-top: none;
 		padding: 8px 16px;
 		margin: 0;
-		color: #fff;
+		background-color: #2171bb;
 		width: 100%;
+		color: #fff;
+		
 	}
 
 	.genesis-nav-menu .sub-menu li {
@@ -1450,8 +1454,12 @@ a[rel~="attachment"]:hover,
 @media only screen and (min-width: 1024px) {
 
 	.nav-primary .genesis-nav-menu > li > a {
-		margin: -2px 0 0 36px;
+		/* margin: -2px 0 0 36px; */
+		margin: -2px 0 0 20px;
+		padding: 8px 10px;
+
 	}
+	
 }
 
 /* Entry Navigation */
@@ -2092,9 +2100,10 @@ p.comment-form-comment {
  * ========================================================================== */
 
 .site-footer {
-	padding: 40px 0;
-	font-size: 14px;
+	padding: 20px 0;
+	font-size: 16px;
 	text-align: center;
+	background-color: #903C3C;
 }
 
 .site-footer p {

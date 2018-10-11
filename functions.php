@@ -39,8 +39,12 @@ function maker_scripts_styles() {
 	wp_enqueue_style( 'ionicons', '//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css', array(), CHILD_THEME_VERSION );
 
 	wp_enqueue_script( 'maker-fitvids', get_stylesheet_directory_uri() . '/js/jquery.fitvids.js', array(), CHILD_THEME_VERSION );
+
   wp_enqueue_script( 'maker-global', get_stylesheet_directory_uri() . '/js/global.js', array(), CHILD_THEME_VERSION );
+
 	wp_enqueue_script( 'maker-responsive-menu', get_stylesheet_directory_uri() . '/js/responsive-menu.js', array(), CHILD_THEME_VERSION );
+
+	wp_enqueue_script( 'smoothscroll', get_stylesheet_directory_uri() . '/js/smoothscroll.js', array(), CHILD_THEME_VERSION );
 
 }
 

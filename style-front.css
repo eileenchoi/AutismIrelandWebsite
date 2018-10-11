@@ -1,28 +1,74 @@
-/* BASIC STYLES
- * ========================================================================== */
-/* 
-*** COLORS ****
-
-Main: Steelblue, #2171bb 
 
 
-*/
-
-/* Blue Scheme
-navy blue #173042
-dark turquoise #236477
-mint white #cfdfda
-lime green #7cad3e
-forest green #4a6c2f
-
-*/
-
-/* 
-*****FONTS *****
+/* Green COLOR SCHEME */
 
 
+body, site-header{
+	background-color: #F8F1E5;
+	color: #335252;
+}
+.nav-primary .genesis-nav-menu > li > a:hover,
+.nav-primary .genesis-nav-menu > li > a:active{
+	background-color:#335252 !important;
+	color: #F8F1E5 !important;
+	transition: 0.3s ease-in-out;
+	border-radius: 3px;
+	}
+.genesis-sub-menu .sub-menu li a:hover{
+	background-color:#335252 !important;
+	color: #F8F1E5 !important;
+	transition: 0.2s ease-in-out;
+	}
 
-*/
+.genesis-nav-menu .sub-menu li a {
+	background-color:#F8F1E5  !important;
+	color:  #903C3C !important;
+}
+.genesis-nav-menu .sub-menu li a:hover{
+		color: #335252 !important;
+}
+
+.site-title a {
+	color: #335252;
+}
+
+.nav-primary a{
+	padding: 5px;
+}
+
+.front-page-1 h3{
+	color: #335252 !important;
+}
+
+ul, 
+li,
+.entry-title a,
+a{
+	color:#903C3C;
+}
+
+h1, 
+h2, 
+h3,
+h4,
+h5,
+p{
+	color: #335252;
+}
+
+input[type="submit"]{
+	background-color: #335252;
+}
+
+.front-page-2 article .entry-header a{
+	color: #F8F1E5;
+}
+
+.facebook{
+	border: 3px solid #335252 !important;
+	padding: 5px;
+}
+
 
 /* Front Page Widgets
  * ========================================================================== */
@@ -84,7 +130,21 @@ forest green #4a6c2f
 	}
 
 }
+/* Menu
+ * ========================================================================== */
+	
+ 	.nav-primary .genesis-nav-menu > li > a:hover,
+	.nav-primary .genesis-nav-menu > li > a:active{
+		background-color:#2171bb;
+		color: white;
+		transition: 0.3s ease-in-out;
+		
+	}
 
+	.genesis-nav-menu .sub-menu li a:hover{
+		color: white;
+		background-color: #2171bb;
+	}
 /* Front Page 1
  * ========================================================================== */
 
@@ -100,7 +160,7 @@ forest green #4a6c2f
 	top:0;
 	max-width: none;
 	position: relative;
-	height: 70vh;
+	height: 55vh;
 	display: flex;
 	align-items: center;
  }
@@ -108,9 +168,7 @@ forest green #4a6c2f
 .front-page-1 .widget:last-child {
 margin-bottom: 0;
 } 
-.front-page-1 h3{
-	color: white;
-}
+
 /*overlay.------*/
 .front-page-1:after {
 content: " ";
@@ -122,7 +180,7 @@ bottom: 0;
 left: 0;
 z-index: 0;
 background: #fff;
-opacity: 0.2;
+opacity: 0.4;
 z-index: -1;
 }
 
@@ -145,7 +203,6 @@ z-index: 99999;
 	/* border: 2px dashed green; */
 	padding: 0;
 	margin: 0;
-	
 	
 }
 
@@ -171,6 +228,11 @@ padding-bottom: 20px;
 /* Front Page 2
  * ========================================================================== */
 
+::placeholder{
+	color: #426E86;
+	text-align: center;
+}
+
 
 .front-page-2 .search-form{
 	position: relative;
@@ -185,6 +247,9 @@ padding-bottom: 20px;
 	
 }
 
+#search-3 h3{
+	margin: 0;
+}
 .front-page-2 .widget-area {
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -241,31 +306,33 @@ padding-bottom: 20px;
   display: block;
 }
 
-.front-contact{
+.contact-info{
+	/* border: 2px solid; */
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	padding-bottom: 15px;
+}
+
+.phone, .email{
+	/* border: 2px solid red; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 70px;
+}
+
+.phone p,
+.email p{
+	padding: 0;
+	margin: 0;
+	font-size: 18px;
+}
+.front-contact-text{
 	max-width: 70%;
 	text-align: center;
 	margin: 0 auto;
 	padding: 13px 0;
-	display: flex;
-	flex-direction: column;
-
-}
-
-.front-contact p{
-	padding: 0 0 20px 0;
-	margin: 0;
-}
-.front-contact .phone,
-.front-contact .email{
-	font-size: 1.5rem;
-	display: flex;
-	flex-direction: row;
-	padding:0;
-}
-
-.phone p, .email p{
-	padding: 0 0 10px 0;
-	margin: 4px 0;
 }
 
 .front-contact i{
@@ -340,14 +407,7 @@ padding-bottom: 20px;
 /* Front Page 7
  * ========================================================================== */
 
- /* .front-page-7{
-	 border:2px solid green;
-	 
- } */
 
- /* .front-page-7 .wrap{
-	 border: 2px solid blue;
- } */
  .front-page-7 .wrap .flexible-widgets{
 	 margin: 0 auto;
  }
@@ -406,4 +466,8 @@ padding-bottom: 20px;
 
  .facebook{
 	 border:2px solid blue;
+ }
+
+ #cff.cff-fixed-height{
+	 padding: 10px 15px;
  }
