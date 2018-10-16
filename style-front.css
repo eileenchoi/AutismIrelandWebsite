@@ -2,7 +2,7 @@
 
 /* Green COLOR SCHEME */
 
-
+/* 
 body, site-header{
 	background-color: #F8F1E5;
 	color: #335252;
@@ -67,9 +67,75 @@ input[type="submit"]{
 .facebook{
 	border: 3px solid #335252 !important;
 	padding: 5px;
+} */
+
+/* *********** 	BLUE/YELLOW COLOR SCHEME *************** */
+/* 
+body, site-header{
+	background-color: #cdd4ca ;
+	color: #cdd4ca;
+}
+.nav-primary .genesis-nav-menu > li > a:hover,
+.nav-primary .genesis-nav-menu > li > a:active{
+	background-color:#CAE4DB !important;
+	color: #00303F  !important;
+	transition: 0.3s ease-in-out;
+	border-radius: 3px;
+	}
+.genesis-sub-menu .sub-menu li a:hover{
+	background-color:#CAE4DB !important;
+	color: #00303F  !important;
+	transition: 0.2s ease-in-out;
+	}
+
+.genesis-nav-menu .sub-menu li a {
+	background-color:#CAE4DB   !important;
+	color:  #00303F  !important;
+}
+.genesis-nav-menu .sub-menu li a:hover{
+		color: #00303F !important;
 }
 
+.site-title a {
+	color: #00303F;
+}
 
+.nav-primary a{
+	padding: 5px;
+}
+
+.front-page-1 h3{
+	color: #00303F !important;
+}
+
+ul, 
+li,
+.entry-title a,
+a{
+	color: #dcae1d;
+}
+
+h1, 
+h2, 
+h3,
+h4,
+h5,
+p{
+	color: #335252;
+}
+
+input[type="submit"]{
+	background-color: #335252;
+}
+
+.front-page-2 article .entry-header a{
+	color: #F8F1E5;
+}
+
+.facebook{
+	border: 3px solid #335252 !important;
+	padding: 5px;
+} */
 /* Front Page Widgets
  * ========================================================================== */
 
