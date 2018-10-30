@@ -1,6 +1,6 @@
 
 
-/* Green COLOR SCHEME */
+/* Primary COLOR SCHEME */
 
 /* 
 body, site-header{
@@ -22,14 +22,19 @@ body, site-header{
 
 .genesis-nav-menu .sub-menu li a {
 	background-color:#F8F1E5  !important;
-	color:  #903C3C !important;
+	color: #15528c !important;
 }
 .genesis-nav-menu .sub-menu li a:hover{
 		color: #335252 !important;
 }
 
 .site-title a {
+	color: #15528c;
+	font-size: 1.5rem;
+}
+.site-title a:hover{
 	color: #335252;
+	transition: 0.3s ease-in-out;
 }
 
 .nav-primary a{
@@ -44,7 +49,8 @@ ul,
 li,
 .entry-title a,
 a{
-	color:#903C3C;
+	color:#15528c;
+	font-weight: 600;
 }
 
 h1, 
@@ -65,12 +71,19 @@ input[type="submit"]{
 }
 
 .facebook{
-	border: 3px solid #335252 !important;
-	padding: 5px;
+	border: 10px double #335252 !important;
+	padding: 8px;
+}
+
+.site-footer, 
+.site-footer a, 
+.site-footer p{
+	background-color: #335252;
+	color: #F8F1E5 !important;
 } */
 
 /* *********** 	BLUE/YELLOW COLOR SCHEME *************** */
-/* 
+
 body, site-header{
 	background-color: #cdd4ca ;
 	color: #cdd4ca;
@@ -83,7 +96,7 @@ body, site-header{
 	border-radius: 3px;
 	}
 .genesis-sub-menu .sub-menu li a:hover{
-	background-color:#CAE4DB !important;
+	background-color:#0C4A8E !important;
 	color: #00303F  !important;
 	transition: 0.2s ease-in-out;
 	}
@@ -135,7 +148,7 @@ input[type="submit"]{
 .facebook{
 	border: 3px solid #335252 !important;
 	padding: 5px;
-} */
+}
 /* Front Page Widgets
  * ========================================================================== */
 
@@ -366,7 +379,7 @@ padding-bottom: 20px;
 }
 
 .front-page-2 article .entry-header a {
-  color: #fff;
+  color: #F8F1E5;
   padding: 20px;
   width: 100%;
   display: block;
@@ -402,7 +415,7 @@ padding-bottom: 20px;
 }
 
 .front-contact i{
-	font-size: 1.7rem;
+	font-size: 1.5rem;
 	margin: 10px;
 }
 /* Front Page 3
@@ -477,6 +490,8 @@ padding-bottom: 20px;
  .front-page-7 .wrap .flexible-widgets{
 	 margin: 0 auto;
  }
+
+
 /* Front Page 8
  * ========================================================================== */
 
@@ -535,5 +550,9 @@ padding-bottom: 20px;
  }
 
  #cff.cff-fixed-height{
-	 padding: 10px 15px;
+	 padding: 0px 15px;
  }
+
+ /* .fa, .fas, .far{
+	 font-family: unset;
+ } */

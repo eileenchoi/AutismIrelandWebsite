@@ -20,24 +20,19 @@ define( 'CHILD_THEME_NAME', 'Maker Pro' );
 define( 'CHILD_THEME_URL', 'http://my.studiopress.com/themes/maker/' );
 define( 'CHILD_THEME_VERSION', '1.0.1' );
 
-	
-//* Enqueue scripts and styles
-
 
 //*Enqueue FontAwesome 
-function enqueue_our_required_stylesheets(){
-	wp_enqueue_style('font-awesome', get_stylesheet_directory_uri('//use.fontawesome.com/releases/v5.3.1/css/all.css')); 
+function enqueue_font_awesome(){
+	wp_enqueue_style('font-awesome', '//use.fontawesome.com/releases/v5.3.1/css/all.css'); 
 }
 
-add_action('wp_enqueue_scripts','enqueue_our_required_stylesheets');
+add_action('wp_enqueue_scripts','enqueue_font_awesome');
 
 
 add_action( 'wp_enqueue_scripts', 'maker_scripts_styles' );
 function maker_scripts_styles() {
 
 	wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Martel:200,700,900|Source+Sans+Pro|Source+Serif+Pro|Montserrat 200,700,900|s', array(), CHILD_THEME_VERSION );
-	
-	// wp_enqueue_style( 'ionicons', '//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css', array(), CHILD_THEME_VERSION );
 
 	wp_enqueue_script( 'maker-fitvids', get_stylesheet_directory_uri() . '/js/jquery.fitvids.js', array(), CHILD_THEME_VERSION );
 
@@ -310,3 +305,14 @@ add_filter( 'get_the_author_genesis_author_box_single', '__return_true' );
 
 //* Display author box on archive pages
 add_filter( 'get_the_author_genesis_author_box_archive', '__return_true' );
+
+// =========== site footer credits =========
+//* Customize the entire footer
+remove_action( 'genesis_footer', 'genesis_do_footer' );
+add_action( 'genesis_footer', 'sp_custom_footer' );
+function sp_custom_footer() {
+	?>
+	<p>&copy; Copyright 2018 <a href="http://autismireland.ie/">Autism Ireland</a> &middot; All Rights Reserved &middot; Site created with ♡ by <a href="http://wordpress.org/">Upply.io</a> &middot;
+	<?php
+}
+

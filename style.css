@@ -78,10 +78,6 @@ input[type="search"] {
 	display: table;
 }
 
-/* SASS * ========================================================================== */
-
-
-
 /* Utility
  * ========================================================================== */
 
@@ -118,10 +114,10 @@ body {
 	color: #2171bb;
 	font-family: "Open Sans", "Helvetica", arial;
 	font-size: 17px;
-	font-weight: 400;
+	font-weight: 600;
 	overflow-x: hidden;
 	line-height: 1.612;
-	letter-spacing: 0.5px;
+	letter-spacing: 0.525px;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -387,7 +383,7 @@ select,
 textarea {
 	background-color: #fff;
 	border-radius: 2px;
-	border: 1px solid #dcdcdc;
+	border: 6px double #dcdcdc;
 	color: #12302e;
 	font-size: 16px;
 	padding: 14px 16px;
@@ -1023,15 +1019,15 @@ a[rel~="attachment"]:hover,
 
 .featured-content .entry-title {
 	font-weight: 700;
-	font-size: 18px;
+	font-size: 1.5rem;
 }
 
 @media only screen and ( min-width: 1024px ) {
-
+/* 
 	.featured-content .entry-title {
 		font-size: 20px;
 		
-	}
+	} */
 
 }
 
@@ -1162,7 +1158,7 @@ a[rel~="attachment"]:hover,
 
 .title-area {
 	float: left;
-	margin-top: 10px;
+	margin-top: 5px;
 }
 
 .site-title {
@@ -1207,13 +1203,6 @@ a[rel~="attachment"]:hover,
 
 @media only screen and (min-width: 800px) {
 
-	/* .site-header {
-		padding: 60px 0 50px;
-	} */
-
-	.title-area {
-		margin-top: 12px;
-	}
 
 	.header-image .site-title {
 		margin-top: 5px;
@@ -2054,7 +2043,7 @@ p.comment-form-comment {
 .footer-widgets-3 .widgettitle,
 .footer-widgets-4 .widgettitle,
 .footer-widgets-5 .widgettitle {
-	font-size: 16px;
+	font-size: 21px;
 }
 
 .footer-widgets .simple-social-icons ul {
@@ -2103,9 +2092,20 @@ p.comment-form-comment {
 	padding: 20px 0;
 	font-size: 16px;
 	text-align: center;
-	background-color: #903C3C;
+
 }
 
 .site-footer p {
 	margin-bottom: 0;
+}
+
+.fa-facebook{
+	margin-right: 5px;
+}
+
+span.header-text{
+	font-size: 20px !important;
+}
+span.cff-text{
+	font-size: 16px;
 }
