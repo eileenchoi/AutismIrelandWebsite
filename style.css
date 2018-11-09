@@ -1151,8 +1151,8 @@ a[rel~="attachment"]:hover,
 .site-header {
 	width: 100%;
 	padding: 12px 0;
-	position: relative;
-	
+	position: fixed;
+	background-color: #F8F1E5;
 
 }
 

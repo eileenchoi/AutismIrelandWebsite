@@ -1,31 +1,24 @@
 
 
 /* Primary COLOR SCHEME */
+/* *** COLORS ****
 
+Main: Steelblue, #2171bb 
+Primary
+Background: #F8F1E5 Bone
+Text: #426E86 Steel Blue
+-- #00465f - 
+soft AI blue - #15528c
+tealblue
+Text: #335252 Stormy Sea (green)*
+Accent: #5A5F37 Grass
+accent: #903C3C Muted Red* OR
+accent: #dcae1d Honey
+accent: #BF9B30 gold */
 
-body, site-header{
+body{
 	background-color: #F8F1E5;
 	color: #335252;
-}
-.nav-primary .genesis-nav-menu > li > a:hover,
-.nav-primary .genesis-nav-menu > li > a:active{
-	background-color:#335252 !important;
-	color: #F8F1E5 !important;
-	transition: 0.3s ease-in-out;
-	border-radius: 3px;
-	}
-.genesis-sub-menu .sub-menu li a:hover{
-	background-color:#335252 !important;
-	color: #F8F1E5 !important;
-	transition: 0.2s ease-in-out;
-	}
-
-.genesis-nav-menu .sub-menu li a {
-	background-color:#F8F1E5  !important;
-	color: #15528c !important;
-}
-.genesis-nav-menu .sub-menu li a:hover{
-		color: #335252 !important;
 }
 
 .site-title a {
@@ -37,13 +30,6 @@ body, site-header{
 	transition: 0.3s ease-in-out;
 }
 
-.nav-primary a{
-	padding: 5px;
-}
-
-.front-page-1 h3{
-	color: #335252 !important;
-}
 
 ul, 
 li,
@@ -75,80 +61,19 @@ input[type="submit"]{
 	padding: 8px;
 }
 
+
+.site-header {
+z-index: 99999;
+
+}
+
 .site-footer, 
 .site-footer a, 
 .site-footer p{
-	background-color: #335252;
-	color: #F8F1E5 !important;
-}
-
-/* *********** 	BLUE/YELLOW COLOR SCHEME *************** */
-/* 
-body, site-header{
-	background-color: #cdd4ca ;
-	color: #cdd4ca;
-}
-.nav-primary .genesis-nav-menu > li > a:hover,
-.nav-primary .genesis-nav-menu > li > a:active{
-	background-color:#CAE4DB !important;
-	color: #00303F  !important;
-	transition: 0.3s ease-in-out;
-	border-radius: 3px;
-	}
-.genesis-sub-menu .sub-menu li a:hover{
-	background-color:#0C4A8E !important;
-	color: #00303F  !important;
-	transition: 0.2s ease-in-out;
-	}
-
-.genesis-nav-menu .sub-menu li a {
-	background-color:#CAE4DB   !important;
-	color:  #00303F  !important;
-}
-.genesis-nav-menu .sub-menu li a:hover{
-		color: #00303F !important;
-}
-
-.site-title a {
-	color: #00303F;
-}
-
-.nav-primary a{
-	padding: 5px;
-}
-
-.front-page-1 h3{
-	color: #00303F !important;
-}
-
-ul, 
-li,
-.entry-title a,
-a{
-	color: #dcae1d;
-}
-
-h1, 
-h2, 
-h3,
-h4,
-h5,
-p{
-	color: #335252;
-}
-
-input[type="submit"]{
-	background-color: #335252;
-}
-
-.front-page-2 article .entry-header a{
+	background-color: #15528c;
 	color: #F8F1E5;
 }
 
-.facebook{
-	border: 3px solid #335252 !important;
-	padding: 5px;
-} */
 /* Front Page Widgets
  * ========================================================================== */
 
@@ -212,55 +137,75 @@ input[type="submit"]{
 /* Menu
  * ========================================================================== */
 	
- 	.nav-primary .genesis-nav-menu > li > a:hover,
-	.nav-primary .genesis-nav-menu > li > a:active{
-		background-color:#2171bb;
-		color: white;
-		transition: 0.3s ease-in-out;
-		
+ 	.nav-primary a{
+		padding: 5px;
 	}
 
+	.nav-primary .genesis-nav-menu > li > a:hover,
+	.nav-primary .genesis-nav-menu > li > a:active{
+		background-color:#335252;
+		color: #F8F1E5;
+		transition: 0.3s ease-in-out;
+		border-radius: 3px;
+		}
+	
+	.genesis-nav-menu .sub-menu li a {
+		background-color:#F8F1E5;
+		color: #15528c;
+		}
+
 	.genesis-nav-menu .sub-menu li a:hover{
-		color: white;
-		background-color: #2171bb;
-	}
+		color: #335252 !important;
+}
+	.genesis-sub-menu .sub-menu li a:hover{
+		background-color:#335252 !important;
+		color: #F8F1E5 !important;
+		transition: 0.2s ease-in-out;
+		}
+	
+		
+
+
 /* Front Page 1
  * ========================================================================== */
 
+.front-page-1 h3{
+	color: #335252 !important;
+}
 
- .front-page-1{
-	 margin: 0 auto;
-	 background-image:url('/wp-content/uploads/2018/10/header.jpg');
-	 background-position: 50% 15%;
-	 background-repeat: no-repeat;
-	 background-size: cover;
-	 -webkit-background-size: cover;
-	-moz-background-size: cover;
+.front-page-1{
+	margin: 0 auto;
+	background-image:url('/wp-content/uploads/2018/10/header.jpg');
+	background-position: 50% 15%;
+	background-repeat: no-repeat;
+	background-size: cover;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
 	top:0;
 	max-width: none;
 	position: relative;
 	height: 55vh;
 	display: flex;
 	align-items: center;
- }
+	}
 
 .front-page-1 .widget:last-child {
-margin-bottom: 0;
+	margin-bottom: 0;
 } 
 
 /*overlay.------*/
 .front-page-1:after {
-content: " ";
-display: inline-block;
-position: absolute;
-top: 0;
-right: 0;
-bottom: 0;
-left: 0;
-z-index: 0;
-background: #fff;
-opacity: 0.4;
-z-index: -1;
+	content: " ";
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 0;
+	background: #fff;
+	opacity: 0.4;
+	z-index: -1;
 }
 
 [class*="front-page-1"] {
@@ -268,9 +213,6 @@ position: relative;
 z-index: 1;
 }
 
-.site-header {
-z-index: 99999;
-}
 
 .front-page-1 .two-thirds{
 	/* border: 2px solid; */
