@@ -2,7 +2,7 @@
 
 /* Primary COLOR SCHEME */
 
-/* 
+
 body, site-header{
 	background-color: #F8F1E5;
 	color: #335252;
@@ -80,10 +80,10 @@ input[type="submit"]{
 .site-footer p{
 	background-color: #335252;
 	color: #F8F1E5 !important;
-} */
+}
 
 /* *********** 	BLUE/YELLOW COLOR SCHEME *************** */
-
+/* 
 body, site-header{
 	background-color: #cdd4ca ;
 	color: #cdd4ca;
@@ -148,7 +148,7 @@ input[type="submit"]{
 .facebook{
 	border: 3px solid #335252 !important;
 	padding: 5px;
-}
+} */
 /* Front Page Widgets
  * ========================================================================== */
 
