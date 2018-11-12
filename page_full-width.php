@@ -21,6 +21,17 @@ function maker_add_body_class( $classes ) {
 	return $classes;
 
 }
+if (has_post_thumbnail()){
+  remove_action( 'genesis_entry_header', 'genesis_do_post_title' );
+  add_action( 'genesis_entry_header', 'gp_page_header');
+  function gp_page_header(){
+      echo '<div class="image-title">';
+      the_post_thumbnail();
+      genesis_do_post_title();
+      echo '</div>';
+  }
+  
+}
 
 //* Run the Genesis loop
 genesis();

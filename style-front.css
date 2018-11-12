@@ -16,19 +16,7 @@ accent: #903C3C Muted Red* OR
 accent: #dcae1d Honey
 accent: #BF9B30 gold */
 
-body{
-	background-color: #F8F1E5;
-	color: #335252;
-}
 
-.site-title a {
-	color: #15528c;
-	font-size: 1.5rem;
-}
-.site-title a:hover{
-	color: #335252;
-	transition: 0.3s ease-in-out;
-}
 
 
 ul, 
@@ -57,22 +45,11 @@ input[type="submit"]{
 }
 
 .facebook{
-	border: 10px double #335252 !important;
+	border: 7px double #335252 !important;
 	padding: 8px;
 }
 
 
-.site-header {
-z-index: 99999;
-
-}
-
-.site-footer, 
-.site-footer a, 
-.site-footer p{
-	background-color: #15528c;
-	color: #F8F1E5;
-}
 
 /* Front Page Widgets
  * ========================================================================== */
@@ -134,59 +111,57 @@ z-index: 99999;
 	}
 
 }
-/* Menu
- * ========================================================================== */
-	
- 	.nav-primary a{
-		padding: 5px;
-	}
-
-	.nav-primary .genesis-nav-menu > li > a:hover,
-	.nav-primary .genesis-nav-menu > li > a:active{
-		background-color:#335252;
-		color: #F8F1E5;
-		transition: 0.3s ease-in-out;
-		border-radius: 3px;
-		}
-	
-	.genesis-nav-menu .sub-menu li a {
-		background-color:#F8F1E5;
-		color: #15528c;
-		}
-
-	.genesis-nav-menu .sub-menu li a:hover{
-		color: #335252 !important;
-}
-	.genesis-sub-menu .sub-menu li a:hover{
-		background-color:#335252 !important;
-		color: #F8F1E5 !important;
-		transition: 0.2s ease-in-out;
-		}
-	
 		
 
 
 /* Front Page 1
  * ========================================================================== */
 
+.cta{
+	font-size: 20.5px;
+	font-family: "Open Sans", "Helvetica", "arial";
+	font-weight: 600;
+	color: #15528c;
+	letter-spacing: 1.3px;
+	margin-bottom: 40px;
+	
+}
+
 .front-page-1 h3{
 	color: #335252 !important;
 }
 
+.front-page-1 button,
+.front-page-1 a{
+	color: #F8F1E5;
+	border: none;
+
+}
+.donate{
+	margin-right: 40px;
+}
+.front-page-1 button:hover,
+.front-page-1 button:active{
+	background-color: #335252;	
+}
+
+
+
 .front-page-1{
-	margin: 0 auto;
+	margin-top: 83px;
 	background-image:url('/wp-content/uploads/2018/10/header.jpg');
-	background-position: 50% 15%;
+	background-position: 60% 15%;
 	background-repeat: no-repeat;
 	background-size: cover;
 		-webkit-background-size: cover;
 		-moz-background-size: cover;
-	top:0;
+	top:0px;
 	max-width: none;
 	position: relative;
-	height: 55vh;
+	height: 65vh;
 	display: flex;
 	align-items: center;
+
 	}
 
 .front-page-1 .widget:last-child {
@@ -215,9 +190,9 @@ z-index: 1;
 
 
 .front-page-1 .two-thirds{
-	/* border: 2px solid; */
-	margin: 50px 0px 20px 80px;
-	padding: 40px;		
+	margin: 0 0 0 40px;
+	padding: 0 40px;
+		
 }
 
 .front-page-1 .wrap{
@@ -471,6 +446,9 @@ padding-bottom: 20px;
 
 }
 
+
+
+
 /* Footer
  * ========================================================================== */
 .back-to-top{
@@ -481,20 +459,14 @@ padding-bottom: 20px;
 	 /* border:2px solid; */
 	 margin:10px 0;
  }
+ 
  .footer-widgets .wrap{
 	 /* border:2px dashed purple; */
 	 max-width: none;
 	 padding: 0 3%;
  }
 
- .facebook{
-	 border:2px solid blue;
- }
 
  #cff.cff-fixed-height{
 	 padding: 0px 15px;
  }
-
- /* .fa, .fas, .far{
-	 font-family: unset;
- } */
