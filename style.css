@@ -910,12 +910,12 @@ a[rel~="attachment"]:hover,
 		width: 32.291666666667%;
 	}
 
-	.four-sixths,
+	/* .four-sixths,
 	.two-thirds,
   .genesis-pro-portfolio .archive-description > *,
 	.full-width-content .content-sidebar-wrap {
 		width: 66.145833333333%;
-	}
+	} */
 
 	.one-fourth,
 	.footer-widgets .widget-area {
@@ -2168,6 +2168,20 @@ span.cff-text{
 
 /* Pages
  * ========================================================================== */
+.pages .content{
+	width: 100%;
+}
+
+.pages .content article{
+	margin: 0;
+	display: inline-block;
+	width: 100%;
+}
+
+.pages .entry-header{
+	margin-top: 80px;
+}
+
 
 .facebook{
 	border: 8px double #335252 !important;
@@ -2227,6 +2241,50 @@ article .entry-header,
  }
  
  /* ==================== Our People ==================== */
+
+ /* === Our People Menu === */
+ .our-people .site-header{
+	 background-color: #15528c;
+	 
+ }
+
+ .our-people .site-header .nav-primary ul li a{
+	 color: #F8F1E5;
+	 border-radius: 4px;
+	 
+ }
+.our-people .site-header .nav-primary ul li a:hover{
+	background-color: #F8F1E5;
+	color: #15528c;
+	border-radius: 4px 4px 0 0;
+	
+}
+
+.our-people .site-header .nav-primary .sub-menu li a{
+	color: #15528c;
+	text-align: center;
+	border-radius: 0 0 4px 4px;
+}
+.our-people .site-header .nav-primary .sub-menu li a:hover{
+	background-color: #15528c;
+	color: #F8F1E5;
+	
+}
+
+.our-people .site-header .nav-primary .sub-menu{
+	background: none;
+}
+.our-people .site-header .nav-primary .sub-menu li{
+	margin-left: 2px;
+	
+}
+
+/* board members tab */
+#menu-item-174 a{
+	border-radius: 0 4px 4px 4px;
+}
+
+/* === menu end === */
 
  .post-143 .entry-title{
 	 width: unset;
@@ -2291,3 +2349,24 @@ article .entry-header,
   .board-members img{
 	  border-radius: 50%;
   }
+
+  /* =========== What We Do ===================== */
+
+  .what-we-do {
+	  background-color: #15528c;
+	  color: #F8F1E5;
+  }
+  .what-we-do .breadcrumb a{
+	  color: #F8F1E5;
+  }
+  .what-we-do .entry-content{
+	  border: 7px double;
+  }
+
+.what-we-do .footer-widgets{
+	background-color: #F8F1E5;
+	
+}
+.what-we-do .footer-1-text{
+	color: #335252;
+}
