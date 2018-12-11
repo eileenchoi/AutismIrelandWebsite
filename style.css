@@ -290,13 +290,8 @@ hr,
 	    font-size: 25px;
 	}
 
-
-	h2 {
-		font-size: 40px;
-	}
-
 	h3 {
-		font-size: 50px;
+		font-size: 40px;
 	}
 }
 
@@ -1213,7 +1208,7 @@ a[rel~="attachment"]:hover,
 	display: none;
 }
 
-/* ====SITE HEADER RESPONSIVE ===== */
+/* ====SITE HEADER MEDIA QUERIES ===== */
 @media only screen and (min-width: 1280px){
 	.site-header .wrap{
 		max-width: 1440px;
