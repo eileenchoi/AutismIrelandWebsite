@@ -829,15 +829,7 @@ a[rel~="attachment"]:hover,
 	width: 100%;
 }
 
-/* ========== MEDIA QUERIES ================ */
 
-/* $xxl: 1280px;
-$xl: 1145px;
-$lg: 1280px;
-$lg: 1024px;
-$md: 768px;
-$sm: 600px;
-$xs: 420px; */
 
 @media only screen and (min-width: 1024px) {
 
@@ -1162,8 +1154,6 @@ $xs: 420px; */
 /* Site Header
  * ========================================================================== */
 
-
-
 .site-header {
 	z-index: 99999;
 	position: fixed;
@@ -1228,13 +1218,21 @@ $xs: 420px; */
 	display: none;
 }
 
-/* @media only screen and (min-width: 800px) {
-
-
-	.header-image .site-title {
-		margin-top: 5px;
+/* ====SITE HEADER RESPONSIVE ===== */
+@media only screen and (min-width: 1280px){
+	.site-header .wrap{
+		max-width: 1440px;
+		margin: 0;
+		padding: 0;
+		
 	}
-} */
+}
+
+@media only screen and (max-width: 600px){
+	.header-image .site-title > a{
+		min-height: 65px;
+	}
+}
 
 
 /* Navigation
@@ -1297,8 +1295,37 @@ $xs: 420px; */
 	
 }
 
+/* Navigation RESPONSIVE
+ * ========================================================================== */
+@media only screen and (min-width: 1280px){
 
-@media only screen and (min-width: 800px) {
+	.nav-primary .genesis-nav-menu > li > a{
+		border: 2px solid;
+		margin: -2px 0 0 15px;
+		padding: 8px 10px;
+	}
+}
+
+@media only screen and (min-width: 1145px){
+
+	.nav-primary .genesis-nav-menu > li > a{
+		margin: -2px 0 0 15px;
+		padding: 8px 10px;
+	}
+}
+
+@media only screen and (min-width: 800px){
+
+	.nav-primary .genesis-nav-menu > li > a{
+		margin: 0 0 0 20px;
+		padding: 15px 0;
+	}
+	.nav-primary .genesis-nav-menu a{
+		font-size: 15.5px;
+	}
+	.header-image .nav-primary:not(button){
+		margin-top: 9px;
+	}
 
 	.genesis-nav-menu .menu-item.highlight a {
 		background: transparent;
@@ -1469,8 +1496,6 @@ $xs: 420px; */
 	.nav-primary .genesis-nav-menu a {
 		margin: 0;
 		padding: 10px 0;
-		font-size: 1.1rem;
-		font-size: 17px;
 	}
 
 }
@@ -1478,7 +1503,7 @@ $xs: 420px; */
 @media only screen and (min-width: 800px) {
 
 	.nav-primary .genesis-nav-menu a {
-		font-size: 16.5px;
+		font-size: 12px;
 	}
 
 	.nav-primary {
@@ -1502,12 +1527,8 @@ $xs: 420px; */
 @media only screen and (min-width: 1024px) {
 
 	.nav-primary .genesis-nav-menu > li > a {
-		/* margin: -2px 0 0 36px; */
-		margin: -2px 0 0 20px;
-		padding: 8px 10px;
-
+		margin: -2px 0 0 36px;
 	}
-	
 }
 
 /* Entry Navigation */

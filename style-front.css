@@ -16,7 +16,15 @@ accent: #903C3C Muted Red* OR
 accent: #dcae1d Honey
 accent: #BF9B30 gold */
 
+/* ========== MEDIA QUERIES ================ */
 
+/* $xxl: 1280px;
+$xl: 1145px;
+$lg: 1280px;
+$lg: 1024px;
+$md: 768px;
+$sm: 600px;
+$xs: 420px; */
 
 
 ul, 
@@ -200,16 +208,48 @@ z-index: 1;
 	margin: 0;
 	
 }
+/* $xxl: 1280px;
+$xl: 1145px;
+$lg: 1280px;
+$lg: 1024px;
+$md: 768px;
+$sm: 600px;
+$xs: 420px; */
 
-@media only screen and (min-width: 800px){
-/* 
-.front-page-1 {
-margin-top: -165px;
-z-index: -1;
-padding-top: 150px;
-padding-bottom: 20px;
-} */
+/* Front Page 1 MEDIA QUERIES
+ ======================================= */
+
+@media only screen and (max-width: 800px){
+	.front-page .widgettitle{
+		font-size: 40px;
+	}
 }
+
+@media only screen and (max-width: 600px){
+	.front-page-1{
+		background-position: center;
+	}
+
+	.front-page-1 .two-thirds {
+		margin: 0 0 0 30px;
+		padding: 0 20px;
+	}
+	
+}
+
+@media only screen and (max-width: 400px){
+	.front-page-1 .widgettitle{
+		font-size: 33px;
+	}
+	.cta{
+	font-size: 16px;
+	}
+	
+	.front-page-1 button{
+		padding: 15px;
+	}
+}	
+
 
 /* Front Page 4 - Landing Section 2
  * ========================================================================== */

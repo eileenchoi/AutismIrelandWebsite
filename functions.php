@@ -31,6 +31,7 @@ add_action('wp_enqueue_scripts','enqueue_font_awesome');
 
 add_action( 'wp_enqueue_scripts', 'maker_scripts_styles' );
 function maker_scripts_styles() {
+	wp_enqueue_style( 'ionicons', '//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css', array(), CHILD_THEME_VERSION );
 
 	wp_enqueue_style( 'google-fonts', '//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700|Martel:200,700,900|Source+Sans+Pro|Source+Serif+Pro|Montserrat 200,700,900|s', array(), CHILD_THEME_VERSION );
 
