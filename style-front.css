@@ -137,6 +137,8 @@ input[type="submit"]{
 
 .front-page-1 h3{
 	color: #335252 !important;
+	font-size: 40px;
+	max-width: 70%;
 }
 
 .front-page-1 button,
@@ -237,9 +239,10 @@ $xs: 420px; */
 	
 }
 
-@media only screen and (max-width: 400px){
-	.front-page-1 .widgettitle{
-		font-size: 33px;
+@media only screen and (max-width: 600px){
+	.front-page-1 .widgettitle, .front-page-1 h3{
+		font-size: 35px;
+		max-width: 100%;
 	}
 	.cta{
 	font-size: 16px;
@@ -342,7 +345,6 @@ $xs: 420px; */
 }
 
 .contact-info{
-	/* border: 2px solid; */
 	display:flex;
 	align-items: center;
 	justify-content: center;
@@ -350,7 +352,6 @@ $xs: 420px; */
 }
 
 .phone, .email{
-	/* border: 2px solid red; */
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -495,12 +496,10 @@ $xs: 420px; */
 }
 
  .footer-1-text{
-	 /* border:2px solid; */
 	 margin:10px 0;
  }
  
  .footer-widgets .wrap{
-	 /* border:2px dashed purple; */
 	 max-width: none;
 	 padding: 0 3%;
  }

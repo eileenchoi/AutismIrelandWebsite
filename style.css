@@ -162,11 +162,6 @@ h5,
 	font-family: "Martel";
 }
 
-h1,
-.front-page-1 .widgettitle {
-	font-size: 50px;
-	
-}
 
 h2 {
 	font-size: 30px;
@@ -1300,7 +1295,6 @@ a[rel~="attachment"]:hover,
 @media only screen and (min-width: 1280px){
 
 	.nav-primary .genesis-nav-menu > li > a{
-		border: 2px solid;
 		margin: -2px 0 0 15px;
 		padding: 8px 10px;
 	}
@@ -1502,9 +1496,9 @@ a[rel~="attachment"]:hover,
 
 @media only screen and (min-width: 800px) {
 
-	.nav-primary .genesis-nav-menu a {
+	/* .nav-primary .genesis-nav-menu a {
 		font-size: 12px;
-	}
+	} */
 
 	.nav-primary {
 		text-align: right;
