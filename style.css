@@ -1209,7 +1209,9 @@ a[rel~="attachment"]:hover,
 }
 
 /* ====SITE HEADER MEDIA QUERIES ===== */
-@media only screen and (min-width: 1280px){
+
+
+@media only screen and (min-width: 1900px) {
 	.site-header .wrap{
 		max-width: 1440px;
 		margin: 0;
@@ -1217,6 +1219,17 @@ a[rel~="attachment"]:hover,
 		
 	}
 }
+
+@media (max-width: 1280px){
+	.site-header .wrap{
+		margin: 0 auto;
+		padding: 0 5%;
+		max-width: 1440px;
+
+	}
+
+}
+
 
 @media only screen and (max-width: 600px){
 	.header-image .site-title > a{
@@ -1295,6 +1308,12 @@ a[rel~="attachment"]:hover,
 	}
 }
 
+@media only screen and (max-width: 1280px){
+	.nav-primary .genesis-nav-menu > li > a{
+		margin: -2px 0 0 25px;
+	}
+
+}
 @media only screen and (min-width: 1145px){
 
 	.nav-primary .genesis-nav-menu > li > a{
@@ -2186,6 +2205,14 @@ span.cff-text{
 }
 
 
+/* Site Footer Responsive
+ * =========================================================== */
+@media only screen and (max-width: 420px){
+	.site-footer p,
+	.site-footer a{
+		font-size: 14px;
+	}
+}
 /* Pages
  * ========================================================================== */
 .pages .content{

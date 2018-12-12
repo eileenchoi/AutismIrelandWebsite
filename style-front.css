@@ -21,7 +21,7 @@ accent: #BF9B30 gold */
 /* $xxl: 1280px;
 $xl: 1145px;
 $lg: 1280px;
-$lg: 1024px;
+$lg: 1025px;
 $md: 768px;
 $sm: 600px;
 $xs: 420px; */
@@ -296,23 +296,28 @@ z-index: 1;
 
 .front-contact i{
 	font-size: 1.5rem;
-	margin: 10px;
+	margin: 7px;
 }
 
-/* $xxl: 1280px;
-$xl: 1145px;
-$lg: 1280px;
-$lg: 1024px;
-$md: 800px;
-$sm: 600px;
-$xs: 420px; */
+
 
 /* Front Page 4 MEDIA QUERIES
  ======================================= */
 @media only screen and (max-width: 800px){
 	.front-contact{
-		margin: 0 10px;
-		justify-content: space-between;
+		margin: 0 15px;
+	}
+	
+	
+	.contact-info{
+		padding: 15px 0;
+	}
+	.search-form{
+		width: 90%;
+	}
+	.front-contact-text{
+		max-width: 90%;
+		width: 90%;
 	}
 
 }
@@ -325,8 +330,54 @@ $xs: 420px; */
 		margin: 0 10px;
 	}
 	.search-form{
-		width: 90%;
+		width: 95%;
 	}
+	.front-contact-text{
+		max-width: 100%;
+		width: 100%;
+	}
+
+}
+@media only screen and (max-width: 420px){
+	body{
+		font-size: 14px;
+	}
+	#search-3 h3{
+		font-size: 20px;
+	}
+
+	.front-page-4 .widget-area{
+		margin-top: 40px;
+	}
+
+	.contact-info{
+		display: block;
+	}
+
+	.front-contact i{
+		font-size: 1rem;
+	}
+	.phone p, .email p{
+		font-size: 14px;
+	}
+
+	input{
+		padding: 10px 16px;
+	}
+
+	input[type="submit"]{
+		padding: 12px 30px;
+		margin-top: 12px;
+	}
+	input, input[type="submit"]{
+		font-size: 14px;
+	}
+
+	.search-form{
+		padding-bottom: 10px;
+	}
+
+
 }
 
 
@@ -439,6 +490,41 @@ $xs: 420px; */
 	font-weight: 600;
 }
 
+
+/* Front Page 3 RESPONSIVE highlight section
+ * ========================================================================== */
+
+@media only screen and (max-width: 1025px){
+	.front-page-3 .first{
+		width: 75%;
+
+	}
+
+	.front-page-3 .widget-area ul li{
+		margin-bottom: 20px;
+	}
+}
+@media only screen and (max-width: 800px){
+	.front-page .widgettitle{
+		font-size: 35px;
+	}
+}
+@media only screen and (max-width: 420px){
+	.front-page-3 .widgettitle{
+		font-size: 20px;
+		text-align: center;
+	}
+
+	.front-page-3 .first{
+		width: 100%;
+	}
+
+	#text-4 .first ul li a{
+		line-height: 2.3;
+		font-size: 16px;
+	}
+
+}
 /* Front Page 6
  * ========================================================================== */
 
@@ -478,11 +564,54 @@ $xs: 420px; */
 }
 /* Front Page 7
  * ========================================================================== */
-
-
+.front-page-7 article .entry-header{
+		margin: 0;
+}
  .front-page-7 .wrap .flexible-widgets{
 	 margin: 0 auto;
  }
+
+/* Front Page 7 Responsive ================================================== */
+
+	@media only screen and (max-width: 800px){
+		.front-page-7 h3{
+			font-size: 35px;
+			margin-bottom: 20px;
+		}
+		.front-page-7 h3,
+		.front-page-7 h4{
+			text-align: center;
+
+		}
+		.front-page-7 h4{
+			margin: 0;
+		}
+
+		.front-page-7 .wrap .flexible-widgets {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+
+		#featured-page-11{
+			margin-top: 20px;
+		}
+
+	}
+	@media only screen and (max-width: 400px){
+		.front-page-7 h3{
+			font-size: 20px;
+			margin-bottom: 10px;
+		}
+		.front-page-7 h4{
+			font-size: 16px;
+		}
+		.featured-content .entry-title{
+			font-size: 16px;
+		}
+
+	}
 
 
 /* Front Page 8
@@ -523,8 +652,34 @@ $xs: 420px; */
 }
 
 
+/*  FACEBOOK MOBILE
+ * ========================================================================== */
+
+ .fb-mobile{
+	 display: none;
+ }
 
 
+@media only screen and (max-width: 800px){
+	
+	.fb-mobile{
+		display: block;
+		margin-bottom: 20px;
+	
+	}
+	.fb-mobile a{
+		border-bottom: none;
+	
+	}
+	.fb-mobile i::before{
+		font-size: 70px;
+	}
+}
+@media only screen and (max-width: 800px){
+	.fb-mobile i::before{
+		font-size:50px;
+	}
+}
 /* Footer
  * ========================================================================== */
 .back-to-top{
@@ -544,3 +699,33 @@ $xs: 420px; */
  #cff.cff-fixed-height{
 	 padding: 0px 15px;
  }
+/* $xxl: 1280px;
+$xl: 1280px;
+$lg: 1145px;
+$lg: 1025px;
+$md: 800px;
+$sm: 600px;
+$xs: 420px; */
+
+@media only screen and (max-width: 800px){
+	.cff-wrapper{
+		display: none;
+	}
+
+	.footer-widgets{
+		margin-top: 0;
+	}
+
+}
+@media only screen and (max-width: 600px){
+	.footer-widgets{
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width: 420px){
+	.front-page .widgettitle{
+		font-size: 25px;
+	}
+
+}
