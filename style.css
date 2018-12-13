@@ -166,7 +166,7 @@ h5,
 h2 {
 	font-size: 30px;
 	font-family: "Martel";
-	font-weight: 200;
+	font-weight: 600;
 	line-height: 1.612em;
 	margin: 0 0 1.612rem;
 
@@ -1241,11 +1241,9 @@ a[rel~="attachment"]:hover,
 /* Navigation
  * ========================================================================== */
 
- 	.nav-primary a{
-		padding: 5px;
-		
+	.nav-primary .genesis-nav-menu > li > a{
+		padding: 15px;
 	}
-
 	.nav-primary .genesis-nav-menu > li > a:hover,
 	.nav-primary .genesis-nav-menu > li > a:active{
 		background-color:#15528c;
@@ -1257,6 +1255,7 @@ a[rel~="attachment"]:hover,
 	.genesis-nav-menu .sub-menu li a {
 		background-color:#F8F1E5;
 		color: #15528c;
+		
 		}
 
 	.genesis-nav-menu .sub-menu li a:hover{
@@ -1322,12 +1321,14 @@ a[rel~="attachment"]:hover,
 	}
 }
 
+
 @media only screen and (min-width: 800px){
 
 	.nav-primary .genesis-nav-menu > li > a{
 		margin: 0 0 0 20px;
-		padding: 15px 0;
+		padding: 15px;
 	}
+
 	.nav-primary .genesis-nav-menu a{
 		font-size: 15.5px;
 	}
@@ -1510,18 +1511,10 @@ a[rel~="attachment"]:hover,
 
 @media only screen and (min-width: 800px) {
 
-	/* .nav-primary .genesis-nav-menu a {
-		font-size: 12px;
-	} */
-
 	.nav-primary {
 		text-align: right;
 	}
 
-	.nav-primary .genesis-nav-menu > li > a {
-		margin: 0 0 0 24px;
-		padding: 15px 0;
-	}
 
 	.nav-primary .genesis-nav-menu > li.left {
 		float: left;
@@ -1532,12 +1525,7 @@ a[rel~="attachment"]:hover,
 	}
 }
 
-@media only screen and (min-width: 1024px) {
 
-	.nav-primary .genesis-nav-menu > li > a {
-		margin: -2px 0 0 36px;
-	}
-}
 
 /* Entry Navigation */
 
@@ -2215,6 +2203,43 @@ span.cff-text{
 }
 /* Pages
  * ========================================================================== */
+
+
+.pages .breadcrumb{
+	margin: 10px 0 0 0;
+}
+.pages .image-title{
+	margin: 0;
+}
+
+.pages h1,
+.pages h2,
+.pages h3,
+.pages h4,
+.pages h5{
+	line-height: 1.2;
+	text-transform: capitalize;
+	font-family: "Martel";
+	margin: 35px 0 15px 0;
+}
+
+.pages h1{
+	text-align: center;
+	border-bottom: 8px double #335252;
+	margin-bottom: 25px;
+}
+.pages h2{
+	font-size: 25px;
+	
+
+}
+
+.pages-ul,
+.pages ul{
+	color: #335252;
+	
+}
+
 .pages .content{
 	width: 100%;
 }
@@ -2257,6 +2282,8 @@ span.cff-text{
 	padding: 10px 20px;
 	
 }
+
+
 /* ==================== ABOUT ==================== */
 
 .page-id-16{
@@ -2397,7 +2424,7 @@ article .entry-header,
 	  border-radius: 50%;
   }
 
-  /* =========== What We Do ===================== */
+  /* =========== WHAT WE DO ===================== */
 
   .what-we-do {
 	  background-color: #15528c;
@@ -2417,3 +2444,4 @@ article .entry-header,
 .what-we-do .footer-1-text{
 	color: #335252;
 }
+/* =========== WHAT IS AUTISM ==> PARENT: WHAT WE DO ===================== */
