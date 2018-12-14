@@ -1153,16 +1153,6 @@ a[rel~="attachment"]:hover,
 	
 }
 
-.site-title a {
-	color: #15528c;
-	font-size: 1.5rem;
-	
-}
-.site-title a:hover{
-	transition: 0.3s ease-in-out;
-}
-
-
 .title-area {
 	float: left;
 	margin-top: 5px;
@@ -1223,7 +1213,7 @@ a[rel~="attachment"]:hover,
 @media (max-width: 1280px){
 	.site-header .wrap{
 		margin: 0 auto;
-		padding: 0 5%;
+		padding: 0 2%;
 		max-width: 1440px;
 
 	}
@@ -1285,7 +1275,7 @@ a[rel~="attachment"]:hover,
 	position: relative;
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
-	font-weight: 400;
+	font-weight: 550;
 }
 
 .genesis-nav-menu li a:hover,
@@ -1309,32 +1299,43 @@ a[rel~="attachment"]:hover,
 
 @media only screen and (max-width: 1280px){
 	.nav-primary .genesis-nav-menu > li > a{
-		margin: -2px 0 0 25px;
+		margin: 2px 15px 0 25px;
 	}
 
 }
+
+
 @media only screen and (min-width: 1145px){
 
 	.nav-primary .genesis-nav-menu > li > a{
-		margin: -2px 0 0 15px;
+		margin: -2px 0 0 5px;
 		padding: 8px 10px;
 	}
 }
 
+@media only screen and (max-width: 1024px){
+	.nav-primary .genesis-nav-menu > li > a{
+		margin: 0 2px -0px -2px;
+		font-size: 13.5px;
+		padding: 7px;
+	}
+
+}
 
 @media only screen and (min-width: 800px){
 
-	.nav-primary .genesis-nav-menu > li > a{
+	/* .nav-primary .genesis-nav-menu > li > a{
 		margin: 0 0 0 20px;
 		padding: 15px;
-	}
+	} */
 
 	.nav-primary .genesis-nav-menu a{
-		font-size: 15.5px;
+		font-size: 14.5px;
+		font-weight: 510;
 	}
-	.header-image .nav-primary:not(button){
+	/* .header-image .nav-primary:not(button){
 		margin-top: 9px;
-	}
+	} */
 
 	.genesis-nav-menu .menu-item.highlight a {
 		background: transparent;
@@ -1354,6 +1355,7 @@ a[rel~="attachment"]:hover,
 		position: absolute;
 		left: -9999px;
 		text-align: left;
+		margin-left: -13px;
 	}
 
 	.genesis-nav-menu > li .sub-menu:before {
@@ -2445,3 +2447,9 @@ article .entry-header,
 	color: #335252;
 }
 /* =========== WHAT IS AUTISM ==> PARENT: WHAT WE DO ===================== */
+
+/* =========== THERAPIES ===================== */
+/* =========== THERAPIES ==> OCCUPATIONAL THERAPY ===================== */
+#source{
+	font-size: 12px;
+}
