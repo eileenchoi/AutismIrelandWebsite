@@ -2223,6 +2223,7 @@ span.cff-text{
 	text-transform: capitalize;
 	font-family: "Martel";
 	margin: 35px 0 15px 0;
+	color: #15528c;
 }
 
 .pages h1{
@@ -2360,6 +2361,12 @@ article .entry-header,
 	border-radius: 0 4px 4px 4px;
 }
 
+/*Audited Accounts */
+#audited-accounts p{
+	margin-top: 2rem;
+	
+}
+
 /* === menu end === */
 
  .post-143 .entry-title{
@@ -2446,7 +2453,21 @@ article .entry-header,
 .what-we-do .footer-1-text{
 	color: #335252;
 }
-/* =========== WHAT IS AUTISM ==> PARENT: WHAT WE DO ===================== */
+/* =========== WHAT IS AUTISM ===================== */
+/* =========== WHAT IS AUTISM - GLOSSARY ===================== */
+.glossary{
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	margin-bottom: 2rem;
+}
+.glossary a{
+	padding: 5px 10px;
+	margin: 0 10px;
+	font-size: 1rem;
+	font-weight: 600;
+}
+
 
 /* =========== THERAPIES ===================== */
 /* =========== THERAPIES ==> OCCUPATIONAL THERAPY ===================== */
