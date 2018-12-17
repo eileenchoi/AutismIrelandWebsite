@@ -652,30 +652,6 @@ z-index: 1;
 }
 
 
-/*  FACEBOOK MOBILE
- * ========================================================================== */
-
- .fb-mobile .fa-facebook{
-	 display: none;
-	 margin-right: 0;
- }
-
-/* iphone X */
-@media only screen and (max-width: 812px){
-	
-	.fb-mobile .fa-facebook{
-		display: block;
-		margin-bottom: 20px;
-	
-	}
-	.fb-mobile a{
-		border-bottom: none;
-	
-	}
-	.fb-mobile i::before{
-		font-size: 40px;
-	}
-}
 
 
 /* Footer

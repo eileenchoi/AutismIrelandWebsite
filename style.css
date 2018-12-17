@@ -123,7 +123,7 @@ body {
 	font-size: 16.5px;
 	font-weight: 600;
 	overflow-x: hidden;
-	line-height: 1.612;
+	line-height: 1.5;
 	letter-spacing: 0.525px;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -1751,7 +1751,7 @@ a[rel~="attachment"]:hover,
 .entry-content .wp-audio-shortcode,
 .entry-content .video-player,
 .quote-caption {
-	margin-bottom: 2rem;
+	margin-bottom: 1.3rem;
 	
 }
 
@@ -2222,7 +2222,7 @@ span.cff-text{
 	line-height: 1.2;
 	text-transform: capitalize;
 	font-family: "Martel";
-	margin: 35px 0 15px 0;
+	margin: 35px 0 10px 0;
 	color: #15528c;
 }
 
@@ -2243,6 +2243,9 @@ span.cff-text{
 	
 }
 
+.pages ul li{
+	margin-bottom: 15px;
+}
 .pages .content{
 	width: 100%;
 }
@@ -2258,9 +2261,39 @@ span.cff-text{
 }
 
 
-.facebook{
+
+
+/*  FACEBOOK MOBILE
+ * ========================================================================== */
+ .facebook{
 	border: 8px double #335252 !important;
 	padding: 8px;
+}
+
+
+ .fb-mobile .fa-facebook{
+	 display: none;
+	 margin-right: 0;
+ }
+
+/* iphone X */
+@media only screen and (max-width: 812px){
+	.cff{
+		display:none;
+	}
+	
+	.fb-mobile .fa-facebook{
+		display: block;
+		margin-bottom: 20px;
+	
+	}
+	.fb-mobile a{
+		border-bottom: none;
+	
+	}
+	.fb-mobile i::before{
+		font-size: 40px;
+	}
 }
 
 .entry-content{
@@ -2474,3 +2507,11 @@ article .entry-header,
 #source{
 	font-size: 12px;
 }
+
+/* =========== SUPPORT FOR PARENTS ===================== */
+.intervention-tips{
+	border-bottom: 8px double #15528c;
+	text-align: center;
+}
+
+
