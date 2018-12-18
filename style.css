@@ -127,6 +127,7 @@ body {
 	letter-spacing: 0.525px;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+
 }
 
 ol,
@@ -210,8 +211,7 @@ p {
 p.intro,
 .archive-description p {
     display: block;
-    font-size: 20px;
-    
+	font-size: 20px;
     font-weight: 200;
 	font-family: "Martel";
 }
@@ -1109,16 +1109,10 @@ a[rel~="attachment"]:hover,
 	color: #F8F1E5;
 }
 
-/* Jetpack */
-
-#wpstats {
-	display: none;
-}
 
 /* Search Form
  * ========================================================================== */
 #search-3{
-	/* border:2px solid; */
 	text-align: center;
 }
 
@@ -1239,19 +1233,25 @@ a[rel~="attachment"]:hover,
 		background-color:#15528c;
 		color: #F8F1E5;
 		transition: 0.3s ease-in-out;
-		border-radius: 3px;
+		border-radius: 2px;
+		
 		}
 	
 	.genesis-nav-menu .sub-menu li a {
 		background-color:#F8F1E5;
 		color: #15528c;
 		
-		}
+	}
+
+	.genesis-nav-menu .sub-menu{
+		border: 5px double #15528c;	
+		border-radius: 2px;	
+	}
 
 	.genesis-nav-menu .sub-menu li a:hover{
 		background-color: #15528c;
 		color: #F8F1E5 !important;
-		border-radius: 3px;
+		border-radius: 0px;
 }
 	.genesis-sub-menu .sub-menu li a:hover,
 	.genesis-sub-menu .sub-menu li a:active{
@@ -1292,7 +1292,7 @@ a[rel~="attachment"]:hover,
 @media only screen and (min-width: 1280px){
 
 	.nav-primary .genesis-nav-menu > li > a{
-		margin: -2px 0 0 15px;
+		margin: 0px 0 0 15px;
 		padding: 8px 10px;
 	}
 }
@@ -1324,18 +1324,10 @@ a[rel~="attachment"]:hover,
 
 @media only screen and (min-width: 800px){
 
-	/* .nav-primary .genesis-nav-menu > li > a{
-		margin: 0 0 0 20px;
-		padding: 15px;
-	} */
-
 	.nav-primary .genesis-nav-menu a{
 		font-size: 14.5px;
 		font-weight: 510;
 	}
-	/* .header-image .nav-primary:not(button){
-		margin-top: 9px;
-	} */
 
 	.genesis-nav-menu .menu-item.highlight a {
 		background: transparent;
@@ -1348,14 +1340,14 @@ a[rel~="attachment"]:hover,
 	.genesis-nav-menu .sub-menu {
 		width: 180px;
 		z-index: 99;
-		background: #12302e;
+		background: #F8F1E5;
 		border-radius: 2px;
 		opacity: 0;
 		margin-top: -12px;
 		position: absolute;
 		left: -9999px;
 		text-align: left;
-		margin-left: -13px;
+		margin-left: -12px;
 	}
 
 	.genesis-nav-menu > li .sub-menu:before {
@@ -1382,7 +1374,7 @@ a[rel~="attachment"]:hover,
 
 	.genesis-nav-menu .sub-menu li a {
 		border-top: none;
-		padding: 8px 16px;
+		padding: 16px;
 		margin: 0;
 		width: 100%;
 		
@@ -1461,8 +1453,8 @@ a[rel~="attachment"]:hover,
 	.menu-toggle:before {
 		position: absolute;
 		color: #12302e;
-		top: 3px;
-		right: 13px;
+		top: 2px;
+		right: 12px;
 		content: "\f394";
 		display: inline-block;
 		font: normal 30px/1.5 'ionicons';
@@ -1601,9 +1593,7 @@ a[rel~="attachment"]:hover,
 	display: block;
 }
 
-/* .pricing-table .plan h3 {
-	color: #57e5ae;
-} */
+
 
 .pricing-table .plan h3 span {
 	font-size: .66em;
@@ -1700,11 +1690,6 @@ a[rel~="attachment"]:hover,
 	margin: 0;
 	display: inline-block;
 	width: 100%;
-}
-
-.archive-description,
-.author-box {
-  margin-bottom: 120px;
 }
 
 .archive .has-post-thumbnail .entry-content > a,
@@ -2243,6 +2228,10 @@ span.cff-text{
 	
 }
 
+.pages .entry-content a{
+	line-height: 2.5;
+}
+
 .pages .entry-content ul li{
 	margin-bottom: 15px;
 }
@@ -2437,7 +2426,7 @@ article .entry-header,
 
  .profile-img{
 	 border: 7px double #15528c;
-	border-radius: 3px;
+	border-radius: 2px;
  }
  
 
@@ -2519,19 +2508,20 @@ article .entry-header,
 
 .contact p{
 	font-size: 16px;
+	
 }
 
 .contact input{
 	padding: 8px 16px;
 }
 .contact form{
-	border: 2px solid;
 	display: flex;
 	flex-direction: column;	
+	
+
 	}
 
 .contact .entry-content{
-	border: 2px solid green;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -2542,22 +2532,164 @@ article .entry-header,
 .contact-text{
 	margin-bottom: 2rem;
 	text-align: center;
-	line-height: 1.8;
+	
 }
 
-
+.contact-msg{
+	text-align: center;
+	margin-bottom: 20px;
+}
 .contact-info{
 	display: flex;
 	align-content: center;
-	justify-content: center;
+	justify-content: space-between;
 }
 
 .contact-info input{
-	max-width: 300px;
+	max-width: 250px;
 	padding: 8px 8px;
+	
+}
+.contact-info .email{
+	margin-right: 40px;
+	
 }
 
 .contact textarea{
 	padding: 0;
 	height: 150px;
+}
+
+.contact input[type="submit"]{
+	display: block;
+	margin: 0 auto;
+	padding: 10px 50px;
+	text-transform: uppercase; 
+}
+.contact input[type="submit"]:hover,
+.contact input[type="submit"]:active{
+	background-color: #335252;
+	color: #F8F1E5;
+
+}
+
+
+/* =========== SEARCH ===================== */
+
+.search .content{
+	border: 8px double #335252;
+	padding: 5%;
+	margin-top: 5%;
+}
+
+.archive-description,
+.author-box {
+  margin-bottom: 0px;
+
+
+}
+
+.search article .entry-header{
+	margin-top: 50px;
+	
+}
+.search article .entry-title{
+	margin: 0;	
+}
+
+.search article .entry-title a{
+	color: #15528c;
+	border-bottom: 6px double;
+
+}
+
+.search article .entry-title a:hover,
+.search article .entry-title a:active{
+	color: #15528c;
+	border-bottom: none;
+	transition: 0.3s ease-in-out;
+
+}
+.search article .entry-content{
+	padding: 3% 0 0 0;
+	border: none;
+}
+
+/* =========== DONATE ===================== */
+
+.donate .entry-content{
+	padding: 0;
+	border: 0;
+}
+.donate-container{
+	border: 2px solid blue;
+	margin-top: 5%;
+	padding: 0;
+	display:flex;
+	align-content: center;
+	justify-content: space-between;
+	
+}
+
+.donate-form{
+	border: 2px solid red;
+	display: flex;
+	justify-content: center;
+	padding: 5%;
+	width: 60%;
+	
+}
+.donate-sidebar{
+	border: 2px solid green;
+	width: 40%;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+}
+
+.give-donation-amount, 
+.donate .give-btn{
+	border: 6px double #15528c;
+	background-color: #F8F1E5;
+	color: #15528c;
+	display: inline-block;
+
+}
+.give-btn:hover{
+	border: none;
+	background: #15528c !important;
+	color: #F8F1E5;
+	padding: 14px;
+	transition: 0.3s ease-in-out;
+}
+form[id*=give-form] .give-donation-amount #give-amount{
+	border: none !important;
+	background: none !important;
+	color: #15528c;
+}
+form[id*=give-form] .give-donation-amount .give-currency-symbol{
+	background: none !important;
+	border-top: none !important;
+	border-bottom: none !important;
+	border-right: 2px solid #15528c !important;
+	color: #15528c !important;
+}
+
+#give-first,
+#give-last,
+#give-email,
+#give-comment{
+	border: 6px double #15528c;
+	background-color: #F8F1E5;
+}
+[id*=give-form].give-fl-form.give-fl-style-give label.give-fl-label{
+	top: 4px !important;
+}
+
+form[id*=give-form] #give-final-total-wrap .give-donation-total-label, 
+form[id*=give-form] #give-final-total-wrap .give-final-total-amount{
+	background: #F8F1E5 !important;
+	border: 6px double #15528c !important;
+	color: #15528c !important;
+	height: unset !important;
 }

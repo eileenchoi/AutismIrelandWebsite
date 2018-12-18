@@ -21,6 +21,15 @@ define( 'CHILD_THEME_URL', 'http://my.studiopress.com/themes/maker/' );
 define( 'CHILD_THEME_VERSION', '1.0.1' );
 
 
+/* Enqueue scripts for smooth scrolling */
+add_action( 'wp_enqueue_scripts', 'sk_enqueue_scripts' );
+function sk_enqueue_scripts() {
+
+	wp_enqueue_script( 'smoothscroll', get_stylesheet_directory_uri() . '/js/smoothscroll.js', array( 'jquery' ), '', true );
+
+}
+
+
 //*Enqueue FontAwesome 
 function enqueue_font_awesome(){
 	wp_enqueue_style('font-awesome', '//use.fontawesome.com/releases/v5.3.1/css/all.css'); 
