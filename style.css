@@ -902,12 +902,12 @@ a[rel~="attachment"]:hover,
 		width: 32.291666666667%;
 	}
 
-	/* .four-sixths,
+	.four-sixths,
 	.two-thirds,
   .genesis-pro-portfolio .archive-description > *,
 	.full-width-content .content-sidebar-wrap {
 		width: 66.145833333333%;
-	} */
+	}
 
 	.one-fourth,
 	.footer-widgets .widget-area {
@@ -975,8 +975,8 @@ a[rel~="attachment"]:hover,
 }
 
 .widget li.current-menu-item a {
-	color: #2171bb;
-	border: 0;
+	color: #335252;
+	border-bottom: 1px solid;
 }
 
 .widget li li {
@@ -1828,6 +1828,7 @@ a[rel~="attachment"]:hover,
 
 .breadcrumb {
 	margin-bottom: 40px;
+	margin-top: 60px;
 }
 
 
@@ -2190,10 +2191,12 @@ span.cff-text{
 }
 /* Pages
  * ========================================================================== */
-
+article .entry-header{
+	margin-top: 40px;
+}
 
 .pages .breadcrumb{
-	margin: 10px 0 0 0;
+	margin: 60px 0 0 0;
 }
 .pages .image-title{
 	margin: 0;
@@ -2204,7 +2207,7 @@ span.cff-text{
 .pages h3,
 .pages h4,
 .pages h5{
-	line-height: 1.2;
+	line-height: 1.5;
 	text-transform: capitalize;
 	font-family: "Martel";
 	margin: 35px 0 10px 0;
@@ -2318,7 +2321,7 @@ span.cff-text{
 
 article .entry-header,
 .post-16 .entry-header{
-	 margin-top: 80px;
+	 margin-top: 40px;
  }
 
  .entry-content img{
@@ -2526,6 +2529,7 @@ article .entry-header,
 	flex-direction: column;
 	justify-content: center;
 	padding: 5% 25%;
+	border: 8px double;
 	
 }
 
@@ -2622,7 +2626,6 @@ article .entry-header,
 	border: 0;
 }
 .donate-container{
-	border: 2px solid blue;
 	margin-top: 5%;
 	padding: 0;
 	display:flex;
@@ -2632,7 +2635,6 @@ article .entry-header,
 }
 
 .donate-form{
-	border: 2px solid red;
 	display: flex;
 	justify-content: center;
 	padding: 5%;
@@ -2640,56 +2642,124 @@ article .entry-header,
 	
 }
 .donate-sidebar{
-	border: 2px solid green;
 	width: 40%;
 	display: flex;
 	align-content: center;
 	justify-content: center;
 }
 
-.give-donation-amount, 
-.donate .give-btn{
-	border: 6px double #15528c;
+.donate-sidebar-img-cont{
+	display: block;
+}
+.donate-sidebar-img-cont img{
+	position: relative;
+	
+}
+.give-donation-amount{
+	border: 6px double #335252;
+	border-radius: 2px;
 	background-color: #F8F1E5;
-	color: #15528c;
+	color: #335252;
 	display: inline-block;
 
 }
-.give-btn:hover{
-	border: none;
+[id*=give-form] .give-form-title{
+	margin: 0 0 40px !important;
+	text-align: center;
+}
+button.give-btn{
+	border: 6px double #dcdcdc;
+	border-radius: 2px;
+	color: #15528c;
+	background-color: #F8F1E5;
+}
+
+button.give-btn:hover{
+	border: 6px double #15528c;
+	border-radius: 2px;
+	background-color: #F8F1E5 !important;
+
+}
+
+ .give-submit{
 	background: #15528c !important;
 	color: #F8F1E5;
-	padding: 14px;
+	padding: 12px 24px !important;
+ }
+.give-submit:hover{
+	border: none;
+	background: #335252 !important;
+	color: #F8F1E5;
 	transition: 0.3s ease-in-out;
+	padding: 12px 24px !important;
 }
 form[id*=give-form] .give-donation-amount #give-amount{
 	border: none !important;
 	background: none !important;
-	color: #15528c;
+	color: #335252;
 }
 form[id*=give-form] .give-donation-amount .give-currency-symbol{
 	background: none !important;
 	border-top: none !important;
 	border-bottom: none !important;
-	border-right: 2px solid #15528c !important;
-	color: #15528c !important;
+	border-right: 2px solid #335252 !important;
+	color: #335252 !important;
 }
 
 #give-first,
 #give-last,
 #give-email,
 #give-comment{
-	border: 6px double #15528c;
+	border: 6px double #dcdcdc;
+	border-radius: 2px;
 	background-color: #F8F1E5;
+}
+
+#give-first:active,
+#give-first:focus,
+#give-last:active,
+#give-last:focus,
+#give-email:active,
+#give-email:focus,
+#give-comment:active,
+#give-comment:focus{
+	border: 6px double #15528c;
+	border-radius: 2px;
+}
+
+#give-comment{
+	height: 200px;
 }
 [id*=give-form].give-fl-form.give-fl-style-give label.give-fl-label{
 	top: 4px !important;
 }
 
-form[id*=give-form] #give-final-total-wrap .give-donation-total-label, 
-form[id*=give-form] #give-final-total-wrap .give-final-total-amount{
+.give-final-total-amount,
+.give-donation-total-label{
 	background: #F8F1E5 !important;
-	border: 6px double #15528c !important;
+	border:none !important;
+	color: #335252 !important;
+	padding: 0 !important;
+}
+.give-final-total-amount{
+	padding-left: 10px !important;
+}
+[id*=give-form].give-fl-form .give-fl-is-active label.give-fl-label {
 	color: #15528c !important;
-	height: unset !important;
+}
+/* =========== DONATE  RESPONSIVE ===================== */
+
+@media (max-width: 800px){
+	.donate-container{
+		flex-direction: column;
+		justify-content: center;
+		border: 8px double #15528c;
+		border-radius: 2px;
+	}
+	.donate-form{
+		width: 100%;
+	}
+	.donate-sidebar{
+		width: 100%;
+	}
 }

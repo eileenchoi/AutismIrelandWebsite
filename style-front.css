@@ -464,7 +464,7 @@ z-index: 1;
 
 /* Front Page 3
  * ========================================================================== */
-
+/* how do i know if  my child has autism spectrum disorder? */
  #text-3 .textwidget{
 	 max-width: 70%;
 	 margin: 0 auto;
@@ -488,7 +488,11 @@ z-index: 1;
 	font-size: 22px;
 	margin-right: 10px;
 	font-weight: 600;
+	line-height: 2;
 }
+
+
+
 
 
 /* Front Page 3 RESPONSIVE highlight section
