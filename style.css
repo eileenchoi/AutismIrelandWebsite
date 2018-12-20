@@ -2621,6 +2621,10 @@ article .entry-header,
 
 /* =========== DONATE ===================== */
 
+.post-462 .entry-header .entry-title{
+	display: none;
+}
+
 .donate .entry-content{
 	padding: 0;
 	border: 0;
@@ -2650,6 +2654,7 @@ article .entry-header,
 
 .donate-sidebar-img-cont{
 	display: block;
+	margin-top: 100px;
 }
 .donate-sidebar-img-cont img{
 	position: relative;
