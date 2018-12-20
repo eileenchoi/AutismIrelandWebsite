@@ -163,7 +163,6 @@ h5,
 	font-family: "Martel";
 }
 
-
 h2 {
 	font-size: 30px;
 	font-family: "Martel";
@@ -2219,6 +2218,7 @@ article .entry-header{
 	border-bottom: 8px double #335252;
 	margin-bottom: 25px;
 }
+
 .pages h2{
 	font-size: 25px;
 	
@@ -2228,6 +2228,7 @@ article .entry-header{
 .pages-ul,
 .pages ul{
 	color: #335252;
+	font-size: 18px;
 	
 }
 
@@ -2252,8 +2253,43 @@ article .entry-header{
 	margin-top: 80px;
 }
 
+/*  PAGES RESPONSIVE
+ * ============================================ */
 
+@media (max-width: 1024px){
+	.pages h1{
+		font-size: 1.8rem;
+	}
 
+	.pages .entry-content p,
+	.pages .entry-content ul li,
+	.pages .entry-content a{
+		font-size: 16px;
+	}
+	
+}
+@media (max-width: 800px){
+	.pages .image-title .entry-title{
+		position: unset;
+	}
+	.pages h1{
+		font-size: 1.5rem;
+	}
+
+	.pages .entry-content p,
+	.pages .entry-content ul li,
+	.pages .entry-content a,{
+		font-size: 14px;
+	}
+	
+}
+
+@media (max-width: 600px){
+	.pages h1{
+		font-size: 1.3rem;
+	}
+	
+}
 
 /*  FACEBOOK MOBILE
  * ========================================================================== */
@@ -2270,7 +2306,7 @@ article .entry-header{
 
 /* iphone X */
 @media only screen and (max-width: 812px){
-	.cff{
+	#cff{
 		display:none;
 	}
 	
@@ -2309,6 +2345,13 @@ article .entry-header{
 	left: 40px;
 	padding: 10px 20px;
 	
+}
+/* ==================== FRONT PAGE 3  ==================== */
+/* MY CHILD HAS BEEN DIAGNOSED WITH AUTISM WHAT DO I DO NEXT*/
+
+.IACP{
+	line-height: 1.5 !important;
+
 }
 
 
@@ -2604,6 +2647,7 @@ article .entry-header,
 .search article .entry-title a{
 	color: #15528c;
 	border-bottom: 6px double;
+	line-height: 1.5;
 
 }
 
@@ -2766,5 +2810,95 @@ form[id*=give-form] .give-donation-amount .give-currency-symbol{
 	}
 	.donate-sidebar{
 		width: 100%;
+	}
+}
+
+
+/* =========== AUTISM ID CARD ===================== */
+
+.page-id-28{
+	background-color: #15528c;
+	color: #F8F1E5;
+}
+
+.page-id-28 .entry-content{
+	border: none;
+}
+.id-card-strong{
+	text-align: center;	
+}
+.page-id-28 p,
+.page-id-28 .entry-content ul li{
+	color: #F8F1E5;
+}
+
+.page-id-28 .entry-content a,
+.page-id-28 .footer-widget-area a{
+	color: #dcae1d;
+}
+.page-id-28 .footer-widget-area .widget-title{
+	color: #F8F1E5;
+}
+
+.page-id-28 .facebook{
+	border: 6px double #F8F1E5 !important;
+	border-radius: 2px;
+}
+
+.page-id-28 .breadcrumb-link{
+	color: #dcae1d;
+}
+.id-card-container{
+	border: 8px double #F8F1E5;
+	border-radius: 2px;
+	display: flex;
+	justify-content: center;
+	padding: 5%;
+}
+.id-card-container ul li,
+.id-card-container ul li a{
+	color: #F8F1E5;
+}
+
+.page-id-28 .site-footer,
+.page-id-28 .site-footer p{
+	background-color: #F8F1E5;
+	color: #335252;
+}
+.page-id-28 .site-footer a{
+	background-color: #F8F1E5;
+	color: #15528c;
+}
+/* =========== AUTISM ID CARD FORM ===================== */
+.wdform-required{
+	color: #dcae1d !important;
+}
+
+.fm-form-container.fm-theme1 .fm-form input[type="text"]:not(.ui-spinner-input){
+border: 2px solid red !important;
+}
+
+#wdform_19_element6{
+	border: 6px double #dcdcdc;
+	
+}
+
+/* =========== AUTISM ID CARD RESPONSIVE ===================== */
+
+@media (max-width: 800px){
+	.fm-form-container.fm-theme1 .fm-form select{
+		font-size: 14px !important;
+		padding: 0 !important;
+	}
+	.fm-form-container.fm-theme1{
+		width: 100% !important;
+	}
+	.page-id-28 .entry-content{
+		padding: 0;
+	}
+
+@media (max-width: 600px){}
+	#wdform_5_year6{
+		width: 70px !important;
 	}
 }
