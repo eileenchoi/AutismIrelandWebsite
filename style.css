@@ -2269,7 +2269,7 @@ article .entry-header{
 @media (max-width: 800px){
 	.pages .image-title .entry-title{
 		position: unset;
-		color: #2171bb;
+		color: #15528c;
 	}
 	.pages h1{
 		font-size: 1.5rem;
@@ -2340,9 +2340,10 @@ article .entry-header{
 	color: #F8F1E5;
 	border: 7px double;
 	position: absolute;
-	bottom: 20px;
+	bottom: 0px;
 	left: 40px;
 	padding: 10px 20px;
+	
 	
 }
 /* ==================== FRONT PAGE 3  ==================== */
@@ -2398,17 +2399,27 @@ article .entry-header,
 	.about .image-title .entry-title{
 		color: #BF9B30;
 	}
- 
+}
  /* ==================== Our People ==================== */
 
  /* === Our People Menu === */
 
-.our-people{
-	border: 2px solid blue;
-}
+ .people-profile{
+	 margin-top: 10px;
+	 
+ }
+
+ .page-id-143 h2{
+	 margin-bottom: 0px !important;
+ }
+ .page-id-143 h3{
+	 margin: 5px 0 20px 0;
+	 font-size: 20px;
+ }
+
  .our-people .site-header{
 	 background-color: #15528c;
-	 
+ 
  }
 
  .our-people .site-header .nav-primary ul li a{
@@ -2416,6 +2427,7 @@ article .entry-header,
 	 border-radius: 4px;
 	 
  }
+
 .our-people .site-header .nav-primary ul li a:hover{
 	background-color: #F8F1E5;
 	color: #15528c;
@@ -2462,7 +2474,7 @@ article .entry-header,
 	text-align: center;
 	color: #15528c;
 	border-bottom: 7px double #15528c;
-	width: 600px;
+	max-width: 600px;
 	margin: 0 auto;
 	padding-top: 40px;
  }
@@ -2475,6 +2487,7 @@ article .entry-header,
 
  .post-143 .entry-content{
 	 border: 7px double #15528c; 
+	 margin: 40px 0;
  }
  
  .post-143 .size-thumbnail{
@@ -2510,7 +2523,7 @@ article .entry-header,
 	 flex-direction: column;
 	 align-items: center;
 	 justify-content: space-between;
-	 width: calc(25% - 20px);
+	 width: calc(33.33% - 20px);
 	 padding: 10px;
 	 margin: 10px;
 	 text-align: center;
@@ -2518,6 +2531,20 @@ article .entry-header,
   .board-members img{
 	  border-radius: 50%;
   }
+
+  @media(max-width: 600px){
+	  #board-members{
+		  flex-direction: column;
+		  
+	  }
+	  .board-members{
+		  width: 100%;
+
+	  }
+	  
+  }
+   /* ==================== Our People RESPONSIVE ==================== */
+
 
   /* =========== WHAT WE DO ===================== */
 
@@ -2540,7 +2567,17 @@ article .entry-header,
 	color: #335252;
 }
 /* =========== WHAT IS AUTISM ===================== */
-/* =========== WHAT IS AUTISM - GLOSSARY ===================== */
+.page-id-196 .entry-content{
+	border: 8px double #15528c;
+
+}
+/* =========== WHAT IS AUTISM - terminology ===================== */
+
+.page-id-276 .image-title .entry-title{
+	background-color: #F8F1E5;
+	color: #335252;
+
+}
 .glossary{
 	display: flex;
 	align-content: center;
@@ -2919,8 +2956,8 @@ border: 2px solid red !important;
 		position: unset;
 		color: #BF9B30!important;
 	}
-
-@media (max-width: 600px){}
+}
+@media (max-width: 600px){
 	#wdform_5_year6{
 		width: 70px !important;
 	}
