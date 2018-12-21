@@ -173,13 +173,13 @@ h2 {
 }
 
 h3 {
-	font-size: 32px;
+	font-size: 25px;
 	
 	
 }
 
 h4 {
-	font-size: 24px;
+	font-size: 21px;
 	font-family: "Source Sans Pro";
 
 }
@@ -289,9 +289,7 @@ hr,
 	    font-size: 25px;
 	}
 
-	h3 {
-		font-size: 40px;
-	}
+	
 }
 
 /* Links
@@ -2088,7 +2086,7 @@ p.comment-form-comment {
  * ========================================================================== */
 
 .footer-widgets {
-	padding: 40px 0 0 0;
+	padding: 20px 0 0 0;
 	margin-top: 50px;
 }
 
@@ -2271,6 +2269,7 @@ article .entry-header{
 @media (max-width: 800px){
 	.pages .image-title .entry-title{
 		position: unset;
+		color: #2171bb;
 	}
 	.pages h1{
 		font-size: 1.5rem;
@@ -2349,19 +2348,29 @@ article .entry-header{
 /* ==================== FRONT PAGE 3  ==================== */
 /* MY CHILD HAS BEEN DIAGNOSED WITH AUTISM WHAT DO I DO NEXT*/
 
+.page-id-521 .image-title .entry-title{
+	max-width: 650px;
+}
 .IACP{
 	line-height: 1.5 !important;
 
 }
 
+/* ==================== WHAT WE DO ==================== */
+.page-id-252 .entry-content{
+	border: 8px double #15528c;
+}
 
-/* ==================== ABOUT ==================== */
+/* ==================== ABOUT US ==================== */
 
 .page-id-16{
 	background-color: #335252;
 	color: #F8F1E5;
 }
 
+.page-id-16 .breadcrumb-link{
+	color: #BF9B30;
+}
 article .entry-header,
 .post-16 .entry-header{
 	 margin-top: 40px;
@@ -2384,10 +2393,19 @@ article .entry-header,
  .page-id-16 footer a{
 	 background-color: #335252;
  }
+
+ @media (max-width: 800px){
+	.about .image-title .entry-title{
+		color: #BF9B30;
+	}
  
  /* ==================== Our People ==================== */
 
  /* === Our People Menu === */
+
+.our-people{
+	border: 2px solid blue;
+}
  .our-people .site-header{
 	 background-color: #15528c;
 	 
@@ -2834,7 +2852,7 @@ form[id*=give-form] .give-donation-amount .give-currency-symbol{
 
 .page-id-28 .entry-content a,
 .page-id-28 .footer-widget-area a{
-	color: #dcae1d;
+	color: #BF9B30;
 }
 .page-id-28 .footer-widget-area .widget-title{
 	color: #F8F1E5;
@@ -2846,7 +2864,7 @@ form[id*=give-form] .give-donation-amount .give-currency-symbol{
 }
 
 .page-id-28 .breadcrumb-link{
-	color: #dcae1d;
+	color: #BF9B30;
 }
 .id-card-container{
 	border: 8px double #F8F1E5;
@@ -2871,7 +2889,7 @@ form[id*=give-form] .give-donation-amount .give-currency-symbol{
 }
 /* =========== AUTISM ID CARD FORM ===================== */
 .wdform-required{
-	color: #dcae1d !important;
+	color: #BF9B30 !important;
 }
 
 .fm-form-container.fm-theme1 .fm-form input[type="text"]:not(.ui-spinner-input){
@@ -2895,6 +2913,11 @@ border: 2px solid red !important;
 	}
 	.page-id-28 .entry-content{
 		padding: 0;
+	}
+	
+	.page-id-28 .image-title .entry-title{
+		position: unset;
+		color: #BF9B30!important;
 	}
 
 @media (max-width: 600px){}
