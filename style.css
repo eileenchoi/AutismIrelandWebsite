@@ -2229,7 +2229,9 @@ article .entry-header{
 	font-size: 18px;
 	
 }
-
+.pages .entry-content{
+	border: 8px double #335252;
+}
 .pages .entry-content a{
 	line-height: 2.5;
 }
@@ -2239,6 +2241,7 @@ article .entry-header{
 }
 .pages .content{
 	width: 100%;
+	
 }
 
 .pages .content article{
@@ -2337,20 +2340,42 @@ article .entry-header{
 }
 
 .image-title .entry-title{
-	color: #F8F1E5;
+	/* color: #F8F1E5; */
+	color: #335252;
+	background-color: rgba(248, 241, 229, 0.7);
 	border: 7px double;
 	position: absolute;
 	bottom: 0px;
-	left: 40px;
+	left: 20px;
 	padding: 10px 20px;
 	
 	
 }
+/* ==================== CORPORATE SPONSORSHIP================== */
+
+.page-id-118 .image-title .entry-title{
+	position: unset;
+	border: none;
+}
+#featured-page-11 .entry-title a,
+#featured-page-12 .entry-title a{
+	border-bottom: 1px solid;
+	line-height: 2;
+}
+#featured-page-11 .entry-title a:hover,
+#featured-page-12 .entry-title a:hover{
+	border-bottom: none;
+}
+
 /* ==================== FRONT PAGE 3  ==================== */
 /* MY CHILD HAS BEEN DIAGNOSED WITH AUTISM WHAT DO I DO NEXT*/
 
 .page-id-521 .image-title .entry-title{
-	max-width: 650px;
+	font-size: 18px;
+
+}
+.page-id-521 .image-title .entry-title{
+	max-width: 5000px;
 }
 .IACP{
 	line-height: 1.5 !important;
@@ -2364,6 +2389,9 @@ article .entry-header{
 
 /* ==================== ABOUT US ==================== */
 
+.page-id-16 .post-edit-link{
+	color:#F8F1E5;
+}
 .page-id-16{
 	background-color: #335252;
 	color: #F8F1E5;
@@ -2422,6 +2450,9 @@ article .entry-header,
  
  }
 
+ .our-people .image-title .entry-title{
+	 bottom: 20px;
+ }
  .our-people .site-header .nav-primary ul li a{
 	 color: #F8F1E5;
 	 border-radius: 4px;
@@ -2552,6 +2583,11 @@ article .entry-header,
 	  background-color: #15528c;
 	  color: #F8F1E5;
   }
+
+  .page-id-252 .image-title .entry-title{
+	  background: transparent;
+	  color: #F8F1E5;
+  }
   .what-we-do .breadcrumb a{
 	  color: #F8F1E5;
   }
@@ -2569,7 +2605,10 @@ article .entry-header,
 /* =========== WHAT IS AUTISM ===================== */
 .page-id-196 .entry-content{
 	border: 8px double #15528c;
-
+}
+/* =========== WHAT IS ASD ===================== */
+.page-id-264 .entry-content{
+	border: 8px double #335252;
 }
 /* =========== WHAT IS AUTISM - terminology ===================== */
 
@@ -2592,8 +2631,9 @@ article .entry-header,
 }
 
 
+
 /* =========== THERAPIES ===================== */
-/* =========== THERAPIES ==> OCCUPATIONAL THERAPY ===================== */
+/* ===========  OCCUPATIONAL THERAPY ===================== */
 #source{
 	font-size: 12px;
 }
@@ -2673,6 +2713,12 @@ article .entry-header,
 	background-color: #335252;
 	color: #F8F1E5;
 
+}
+
+/* ===========  BEHAVIOURAL HEALTH  ===================== */
+.page-id-325 .image-title .entry-title{
+	color: #335252;
+	background-color: rgba(248, 241, 229, 0.7);
 }
 
 
