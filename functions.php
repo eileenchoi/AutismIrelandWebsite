@@ -322,7 +322,7 @@ remove_action( 'genesis_footer', 'genesis_do_footer' );
 add_action( 'genesis_footer', 'sp_custom_footer' );
 function sp_custom_footer() {
 	?>
-	<p>&copy; Copyright 2018 <a href="http://autismireland.ie/">Autism Ireland</a> &middot; All Rights Reserved &middot; Site created with ♡ by <a href="http://wordpress.org/">Upply.io</a> &middot;
+	<p>&copy; Copyright 2018 <a href="http://autismireland.ie/">Autism Ireland</a> &middot; All Rights Reserved &middot; Site created with ♡ by <a href="http://eileenchoi.com">Upply.io</a> &middot;
 	<?php
 }
 
